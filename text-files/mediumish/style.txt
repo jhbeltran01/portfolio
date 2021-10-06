@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    border-bottom: 1px solid black;
+    padding: 0.5rem 1rem;
+    margin-bottom: 4rem;
+    position: relative;
+    
+    &__list {
+        display: none;
+        background-color: #ffffff8c;
+        list-style-type: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -190px;
+        border-bottom: 1px solid black;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #000000;
+        padding: 0.5rem 0;
+        padding-left: 3rem;
+        display: block;
+        background-color: #ffffff8c;
+    }
+
+    &__item {
+        background-color: white;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+.footer {
+    border-top: 1px solid black;
+    margin: 1rem;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+
+    &__item {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.hero {
+    margin: 0 1rem;
+
+    &__title {
+        font-size: 2.5;
+        font-family: 'Righteous', cursive;
+    }
+
+    &__desc {
+        margin: 1rem 0;
+        font-size: 1.25rem;
+    }
+}
+
+.wrapper {
+    margin: 1rem;
+
+    &__title {
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+        position: relative;
+        width: max-content;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 2px;
+            background-color: black;
+            left: 0;
+            right: 0;
+            margin-top: 1rem;
+        }
+    }
+
+    &__content {
+        border-top: 2px solid #b8a1a1;
+        padding: 2em 0;
+    }
+}
+
+.card {
+    border: 1px solid rgb(197, 181, 181);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    
+    &__img {
+        width: 100%;
+    }
+
+    &__content {
+        padding: 1.5rem;
+    }
+
+    &__title {
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
+        color: #00000099;
+    }
+
+    &__desc {
+        font-size: 0.95rem;
+        margin: 0.5rem 0;
+        color: #00000070;
+    }
+
+    &__author {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+
+    &__avatar {
+        width: 50px;
+        border-radius: 100px;
+        margin-right: 0.5rem;
+    }
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #000000;
+    width: 200px;
+    margin: 0 auto;
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+}
+
+.search {
+    width: 140px;
+    border: 0;
+
+    &:focus {
+       outline: 0;
+    }
+}
+
+.show {
+    display: block;
+}
+
+.remove-border-bottom {
+    border-bottom-color: transparent;
+}
+
+.name {
+    font-size: 0.75rem;
+    color: #000000cc;
+}
+
+.date {
+    font-size: 0.75rem;
+    color: #00000070;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 2px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    margin: 0 0.3rem;
+}
+
+.icon {
+    display: block;
+    margin: 1rem 1rem 1rem auto
+}
+
+.link {
+    color: blue;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.margin-left-1 {
+    margin-left: 2rem;
+}
+
+@media all and (min-width: 576px) {
+    .logo {
+        margin-left: 0;
+    }
+
+    .card {
+        &__author {
+            display: block;
+        }
+    }
+
+    .date {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .grid-2-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .grid-3-col {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: max-content;
+        grid-gap: 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav {
+        &__list {
+            display: flex;
+            align-items: center;
+            position: unset;
+            border-bottom: 0;
+        }
+
+        &__link {
+            padding: 0;
+            margin: 0 1rem;
+        }
+
+        &__item {
+            padding: 0;
+        }
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .grid-2-col-1000 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card__img--full-height {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .set-max-width {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charholder="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- font used -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href=""><img class="navbar__logo" src="images/logo.png" alt="" /></a>
+            <button class="btn btn-burger">
+                <div class="btn-burger__layer"></div>
+                <div class="btn-burger__layer"></div>
+                <div class="btn-burger__layer"></div>
+            </button>
+            <ul id="show_hide" class="navbar__list">
+                <li><a class="navbar__link" href="#home">HOME</a></li>
+                <li><a class="navbar__link" href="#about">ABOUT</a></li>
+                <li><a class="navbar__link" href="#services">SERVICES</a></li>
+                <li><a class="navbar__link" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="navbar__link" href="#skills">SKILLS</a></li>
+                <li><a class="navbar__link" href="#experience">EXPERIENCE</a></li>
+                <li><a class="navbar__link" href="#blog">BLOG</a></li>
+                <li><a class="navbar__link" href="#testimonial">TESTIMONIAL</a></li>
+                <li><a class="navbar__link" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div id="home" class="wrapper wrapper--remove-pad-top">
+            <section class="hero">
+                <img class="hero__img grid-align-col-2-responsive" src="images/main.jpg" alt="" />
+                <div class="grid-align-col-1-responsive">
+                    <header class="hero__header">
+                        <h1 class="hero__title">
+                            Jacob <br />
+                            Hawkins
+                        </h1>
+                    </header>
+                    <h3 class="hero__subtitle">
+                        UI designer, photographer <br />
+                        and travel enthusiast
+                    </h3>
+                </div>
+            </section>
+        </div>
+
+        <main>
+            <section class="wrapper">
+                <header class="wrapper__header">
+                    <h2 id="about" class="wrapper__title">About</h2>
+                </header>
+                <div class="grid-col-2-responsive">
+                    <div class="card">
+                        <div class="card__info">
+                            <p class="card__info-title">NAME</p>
+                            <p>Jackob Hawkings</p>
+                        </div>
+
+                        <div class="card__info">
+                            <p class="card__info-title">BIRTHDAY</p>
+                            <p>25. 03. 1987.</p>
+                        </div>
+
+                        <div class="card__info">
+                            <p class="card__info-title">ROLE</p>
+                            <p>Lead Designer</p>
+                        </div>
+
+                        <div class="card__info">
+                            <p class="card__info-title">EMAIL</p>
+                            <p>stone@example.com</p>
+                        </div>
+
+                        <div class="card__info">
+                            <p class="card__info-title">PHONE</p>
+                            <p>(+987) 987 654 321</p>
+                        </div>
+
+                        <div class="card__info">
+                            <p class="card__info-title">WEBSITE</p>
+                            <p>www.somewebsite.com</p>
+                        </div>
+
+                        <div class="card__info">
+                            <p class="card__info-title">LOCATION</p>
+                            <p>New York, USA</p>
+                        </div>
+
+                        <div class="card__info">
+                            <p class="card__info-title">INTERESTS</p>
+                            <p>Games, Books, Movies</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="grid-col-2">
+                            <div class="counter">
+                                <p class="counter__title">AWARDS</p>
+                                <p class="counter__number">38</p>
+                            </div>
+
+                            <div class="counter">
+                                <p class="counter__title">XP YEARS</p>
+                                <p class="counter__number">12+</p>
+                            </div>
+
+                            <div class="counter">
+                                <p class="counter__title">CLIENTS</p>
+                                <p class="counter__number">54</p>
+                            </div>
+
+                            <div class="counter">
+                                <p class="counter__title">PROJECTS</p>
+                                <p class="counter__number">76</p>
+                            </div>
+                        </div>
+
+                        <p class="wrapper__desc wrapper__desc--large">Nam ultrices ultrices nec tortor pulvinar esteras loremips est</p>
+                        <p class="wrapper__desc">
+                            Mauris volutpat estera phasellus. Varius nec orci, quam augue loremes lines pellentesque non identiqum pere.
+                        </p>
+
+                        <p class="wrapper__desc">
+                            Tristique amet volutpat nunc euismod mauris ollicitudin est sempe vulputate id in nullam. Purus tincidunt maga ut turpis
+                            eu, eu enim. Nisl porttitor elit risus velit urnase morbit mauris at proin laoreet lobortis urna aliquame.
+                        </p>
+
+                        <button class="btn btn--dark">DOWNLAOD CV</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper">
+                <header class="wrapper__header">
+                    <h2 id="services" class="wrapper__title">Scvs</h2>
+                </header>
+
+                <div class="grid-col-2-responsive">
+                    <article class="tab">
+                        <header>
+                            <h3>
+                                <button class="btn btn--tab tab__title">Design</button>
+                            </h3>
+                        </header>
+
+                        <div class="tab__content">
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Aces fames lectus in libero</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Est aliquet est ertare ram</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Feraso est lorem nunc dolor</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Sit amet se holdertera aces holder</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Volutpat inte holderera estercu</p>
+                        </div>
+                    </article>
+
+                    <article class="tab">
+                        <header>
+                            <h3>
+                                <button class="btn btn--tab tab__title">Video</button>
+                            </h3>
+                        </header>
+
+                        <div class="tab__content">
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span> Aces fames lectus in libero</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span> Est aliquet est ertare ram</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span> Feraso est lorem nunc dolor</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span> Sit amet se holdertera aces holder</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span> Volutpat inte holderera estercu</p>
+                        </div>
+                    </article>
+
+                    <article class="tab">
+                        <header>
+                            <h3>
+                                <button class="btn btn--tab tab__title">Photos</button>
+                            </h3>
+                        </header>
+
+                        <div class="tab__content">
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Aces fames lectus in libero</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Est aliquet est ertare ram</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Feraso est lorem nunc dolor</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Sit amet se holdertera aces holder</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Volutpat inte holderera estercu</p>
+                        </div>
+                    </article>
+
+                    <article class="tab">
+                        <header>
+                            <h3>
+                                <button class="btn btn--tab tab__title">Code</button>
+                            </h3>
+                        </header>
+
+                        <div class="tab__content">
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Aces fames lectus in libero</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Est aliquet est ertare ram</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Feraso est lorem nunc dolor</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Sit amet se holdertera aces holder</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Volutpat inte holderera estercu</p>
+                        </div>
+                    </article>
+
+                    <article class="tab">
+                        <header>
+                            <h3>
+                                <button class="btn btn--tab tab__title">Music</button>
+                            </h3>
+                        </header>
+
+                        <div class="tab__content">
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Aces fames lectus in libero</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Est aliquet est ertare ram</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Feraso est lorem nunc dolor</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Sit amet se holdertera aces holder</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Volutpat inte holderera estercu</p>
+                        </div>
+                    </article>
+
+                    <article class="tab">
+                        <header>
+                            <h3>
+                                <button class="btn btn--tab tab__title">Graphics</button>
+                            </h3>
+                        </header>
+
+                        <div class="tab__content">
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Aces fames lectus in libero</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Est aliquet est ertare ram</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Feraso est lorem nunc dolor</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Sit amet se holdertera aces holder</p>
+                            <p class="tab__desc grid-list-col-2"><span class="box"></span>Volutpat inte holderera estercu</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="wrapper">
+                <header class="wrapper__header">
+                    <h2 id="portfolio" class="wrapper__title">Portfolio</h2>
+                </header>
+
+                <article class="article grid-col-2-responsive">
+                    <img class="wrapper__img" src="images/portfolio_item_1.jpg" alt="" />
+                    <div>
+                        <header>
+                            <h4 class="wrapper__subtitle">Web Design</h4>
+                        </header>
+                        <p class="wrapper__desc">Mauris volutpat estera phasellus varius nec orci, quam augue se loremes lines pellentesque non</p>
+
+                        <a class="link" href="#">VIEW MORE </a>
+                    </div>
+                </article>
+
+                <article class="article grid-col-2-responsive">
+                    <img class="wrapper__img" src="images/portfolio_item_2.jpg" alt="" />
+                    <div>
+                        <header>
+                            <h4 class="wrapper__subtitle">Grid</h4>
+                        </header>
+
+                        <p class="wrapper__desc">Volutpat estera phasellus varius nec orci, quam augue se loremes lines pellentesque non mareque</p>
+
+                        <a class="link" href="">VIEW MORE </a>
+                    </div>
+                </article>
+
+                <div class="article">
+                    <a class="link link--big" href="">LOAD MORE</a>
+                </div>
+            </section>
+
+            <section class="wrapper">
+                <header class="wrapper__header">
+                    <h2 id="skills" class="wrapper__title">Skills</h2>
+                </header>
+
+                <div class="grid-col-2-responsive">
+                    <article class="card article">
+                        <p class="wrapper__desc wrapper__desc--large">Nam ultrices ultrices nec tortor pulvinar esteras loremips estorem ipusm</p>
+
+                        <p class="wrapper__desc">
+                            Mauris volutpat estera phasellus. Varius nec orcina quam augue loremes lines rester pellentesque non estar identiqum pere
+                            holderarra nunc vulputate id in nullam lorem ipsum dolor holderarra nunc vulputateester.
+                        </p>
+                        <p class="wrapper__desc">
+                            Tristique amet volutpat nunc euismod mauris nonce ollicitudin est sempe vulputate id in nullam. Purusat tincidunt maga ut
+                            turpis eu, eu enim. Nisl porttitor elit risus velit urnase morbit mauris at proin laoreet est lobortis urna aliquame
+                            holderera fermentum sit iaculis
+                        </p>
+                    </article>
+
+                    <div>
+                        <div class="skill-holder grid-sidebar-col-2 place-center">
+                            <span class="skill-holder__percent-num">75%</span>
+
+                            <div class="">
+                                <p class="skill-holder__skill">Creativity</p>
+
+                                <div class="skill-holder__percent-bar">
+                                    <div class="skill-holder__bar"></div>
+                                    <div class="skill-holder__percent skill-holder__percent--width-75"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-holder grid-sidebar-col-2 place-center">
+                            <span class="skill-holder__percent-num">45%</span>
+
+                            <div>
+                                <p class="skill-holder__skill">Cooking</p>
+
+                                <div class="skill-holder__percent-bar">
+                                    <div class="skill-holder__bar"></div>
+                                    <div class="skill-holder__percent skill-holder__percent--width-45"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-holder grid-sidebar-col-2 place-center">
+                            <span class="skill-holder__percent-num">90%</span>
+
+                            <div>
+                                <p class="skill-holder__skill">PhP</p>
+
+                                <div class="skill-holder__percent-bar">
+                                    <div class="skill-holder__bar"></div>
+                                    <div class="skill-holder__percent skill-holder__percent--width-90"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-holder grid-sidebar-col-2 place-center">
+                            <span class="skill-holder__percent-num">65%</span>
+
+                            <div>
+                                <p class="skill-holder__skill">Marketing</p>
+
+                                <div class="skill-holder__percent-bar">
+                                    <div class="skill-holder__bar"></div>
+                                    <div class="skill-holder__percent skill-holder__percent--width-65"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-holder grid-sidebar-col-2 place-center">
+                            <span class="skill-holder__percent-num">85%</span>
+
+                            <div>
+                                <p class="skill-holder__skill">Design</p>
+
+                                <div class="skill-holder__percent-bar">
+                                    <div class="skill-holder__bar"></div>
+                                    <div class="skill-holder__percent skill-holder__percent--width-85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper">
+                <header class="wrapper__header">
+                    <h2 id="experience" class="wrapper__title">Exp.</h2>
+                </header>
+
+                <div>
+                    <article class="timeline grid-col-2-responsive">
+                        <p class="wrapper__desc">September, 2016 – May, 2017</p>
+
+                        <div>
+                            <p class="wrapper__desc">Junior Developer</p>
+                            <p class="wrapper__desc">
+                                Sed quia consequuntur magni dolores eos quira tione estera voluptatem sequi nesciunt nuncera permano nence of the
+                                stars from which we spring.
+                            </p>
+                            <p class="wrapper__desc">Lobrissa / Chicago</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline grid-col-2-responsive">
+                        <p class="wrapper__desc">May, 2017 – Jun, 2018</p>
+
+                        <div>
+                            <p class="wrapper__desc">Senior Developer</p>
+                            <p class="wrapper__desc">
+                                Consequuntur magni dolores eos quira tione estera voluptatem sequi nesciunt nuncera permanotesa.
+                            </p>
+                            <p class="wrapper__desc">Faucibuse / Seattle</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline grid-col-2-responsive">
+                        <p class="wrapper__desc">Jun, 2018 – December, 2019</p>
+
+                        <div>
+                            <p class="wrapper__desc">Senior Developer</p>
+                            <p class="wrapper__desc">
+                                Magni dolores eos quira tione estera voluptatem sequi nesciunt nuncera permano nence of the stars from voluptatem
+                                sequi nesciunt nuncera polimos kokolos etc.
+                            </p>
+                            <p class="wrapper__desc">Reesturato / New York</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline grid-col-2-responsive">
+                        <p class="wrapper__desc">December, 2019 – Current</p>
+
+                        <div>
+                            <p class="wrapper__desc">CEO</p>
+                            <p class="wrapper__desc">
+                                Tristique amet volutpat nunc euismod mauris nonce ollicitudin est sempe vulputate id in nullam. Purusat tincidunt maga
+                                ut turpis eu, eu enim. Nisl porttitor elit koteros musico.
+                            </p>
+                            <p class="wrapper__desc">Ercussa / San Francisco</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="wrapper">
+                <header class="wrapper__header">
+                    <h3 id="blog" class="wrapper__title">Blog</h3>
+                </header>
+
+                <article class="article article--hover grid-col-2-responsive">
+                    <div class="wrapper__img-box">
+                        <img class="wrapper__img wrapper__img--large" src="images/blog_post_01-768x360.jpg" alt="" />
+                    </div>
+
+                    <div>
+                        <header>
+                            <p class="wrapper__desc wrapper__desc--large">Hundreds of thousands a still more glorious nights around art</p>
+                        </header>
+
+                        <p class="wrapper__desc">
+                            Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death
+                            rich in heavy atoms with pretty stories for which ...
+                        </p>
+
+                        <a class="link" href="">READ FULL STORY</a>
+                    </div>
+                </article>
+
+                <article class="article article--hover grid-col-2-responsive">
+                    <div class="wrapper__img-box">
+                        <img class="wrapper__img wrapper__img--large" src="images/blog_post_02-768x360.jpg" alt="" />
+                    </div>
+
+                    <div>
+                        <header>
+                            <p class="wrapper__desc wrapper__desc--large">Preserve and cherish that pale blue dot are light years</p>
+                        </header>
+
+                        <p class="wrapper__desc">
+                            Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death
+                            rich in heavy atoms with pretty stories for which ...
+                        </p>
+
+                        <a class="link" href="">READ FULL STORY</a>
+                    </div>
+                </article>
+
+                <article class="article article--hover grid-col-2-responsive">
+                    <div class="wrapper__img-box">
+                        <img class="wrapper__img wrapper__img--large" src="images/blog_post_03-768x360.jpg" alt="" />
+                    </div>
+
+                    <div>
+                        <header>
+                            <p class="wrapper__desc wrapper__desc--large">Great turbulent clouds hearts of the stars stirred by starlight sky</p>
+                        </header>
+
+                        <p class="wrapper__desc">
+                            Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death
+                            rich in heavy atoms with pretty stories for which ...
+                        </p>
+
+                        <a class="link" href="">READ FULL STORY</a>
+                    </div>
+                </article>
+            </section>
+
+            <div class="wrapper">
+                <section class="reference">
+                    <header class="wrapper__header">
+                        <h2 id="testimonial" class="wrapper__title">Refs</h2>
+                    </header>
+
+                    <div class="grid-col-2-responsive refs">
+                        <div class="line-divider"></div>
+                        <div class="card card--double-padding card--ref">
+                            <div class="marker"></div>
+
+                            <img src="images/icon_quote_refs.png" alt="" />
+                            <p class="wrapper__desc">
+                                Duis iaculis vulputate mauris, vitae ultricies nunc sodales et. Nunc at pin laoreet est lobortis est report.placerat
+                                vulputate malesuad tempus erat si
+                            </p>
+                            <p class="wrapper__desc">
+                                Jenny Stone <br />
+                                www.somesite.com
+                            </p>
+                        </div>
+
+                        <div class="card card--double-padding grid-align-row-2-responsive card--ref">
+                            <div class="marker"></div>
+
+                            <img src="images/icon_quote_refs.png" alt="" />
+                            <p class="wrapper__desc">
+                                Aenean molestie vehicula nisl, sit amet pharetra ex ultricies et. Sed sapien diam, efficitur a orci nec, imperdiet
+                                accumsan.
+                            </p>
+                            <p class="wrapper__desc">
+                                Oliver Smith <br />
+                                www.somesite.com
+                            </p>
+                        </div>
+
+                        <div class="card card--double-padding grid-align-row-3-responsive card--ref">
+                            <div class="marker"></div>
+
+                            <img src="images/icon_quote_refs.png" alt="" />
+                            <p class="wrapper__desc">
+                                Vivamus tortor nunc, pulvinar maximus rutrum eget, commodo eu elit. Vivamus in tellus ante. In sed vestibulum dolor.
+                                Integer ornare mollis purus, aliquam rutrum diam finibus necius lorem ipsum.
+                            </p>
+                            <p class="wrapper__desc">Anna Wilson <br />www.somesite.com</p>
+                        </div>
+
+                        <div class="card card--double-padding grid-align-row-4-responsive card--ref">
+                            <div class="marker"></div>
+
+                            <img src="images/icon_quote_refs.png" alt="" />
+                            <p class="wrapper__desc">
+                                Quisque vitae augue lorem. Duis dapibus auctor dui et aliquet. Nullam scelerisque justo et libero malesuada venenatis.
+                                Quisque tincidunt dignissim turpis vitae.
+                            </p>
+                            <p class="wrapper__desc">Petra Who <br />www.somesite.com</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="grid-col-2-responsive">
+                    <img class="wrapper__img" src="images/company_logo_01@2x.png" alt="" />
+                    <img class="wrapper__img" src="images/company_logo_02@2x.png" alt="" />
+                    <img class="wrapper__img" src="images/company_logo_03@2x.png" alt="" />
+                    <img class="wrapper__img" src="images/company_logo_04@2x.png" alt="" />
+                </div>
+            </div>
+
+            <footer class="footer wrapper">
+                <header class="wrapper__header">
+                    <h2 id="contact" class="wrapper__title">Hello</h2>
+                </header>
+
+                <div class="grid-col-2-responsive">
+                    <form class="card" action="">
+                        <input class="form__input-text" type="text" name="" id="" placeholder="Name" />
+                        <input class="form__input-text" type="text" placeholder="Email" />
+                        <input class="form__input-text" type="text" placeholder="Subject" />
+                        <textarea class="form__input-text" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <a class="link link--big" href="">Send Message</a>
+                    </form>
+
+                    <div>
+                        <p class="wrapper__desc wrapper__desc--large">
+                            Nam ultrices ultrices nec tortor pulvinar esteras loremips est orem ipusm mupolis tetoros.
+                        </p>
+
+                        <p class="wrapper__desc">
+                            Mauris volutpat estera phasellus varius nec orcina quam augue loremes lines rester pellentesque non estar identiqum pere
+                            holderarra nunc vulputate id in nullam polo lorem ipsum dolor holderarra nunc vulputa teestertuos.
+                        </p>
+
+                        <p class="wrapper__desc">
+                            Nunc mollis lectus sed tellus aliquet, eu molestie mi venenatis aliquam id nisi efficitur, tincidunt dui a, rhomi sed
+                            felis nisi, varius eu porta ut, rutrum nonipus turos eto.
+                        </p>
+
+                        <div class="wrapper__desc">
+                            <p>Name: Jacob Hawkins</p>
+                            <p>Address: New York, USA</p>
+                            <p>Phone: +1 234-567-890</p>
+                            <p>Hours: 6:00 am – 2:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

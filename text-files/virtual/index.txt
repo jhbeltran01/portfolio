@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <title>Virtual Portfolio - Clone</title>
+    </head>
+    <body>
+        <div class="settings">
+            <button class="btn-settings"><img class="settings__icon" src="img/settings.svg" alt=""></button>
+            <div class="settings__content">
+                <p>Select Color</p>
+
+                <div class="settings__theme-changer">
+                    <button class="settings__theme theme-one active-theme">
+                        <img class="check-mark" src="img/checked.svg" alt="">
+                    </button>
+                    <button class="settings__theme theme-two"></button>
+                    <button class="settings__theme theme-three"></button>
+                    <button class="settings__theme theme-four"></button>
+                    <button class="settings__theme theme-five"></button>
+                </div>
+            </div>
+        </div>
+
+        <section class="hero flex-container-3">
+            <nav class="nav">
+               <div class="set-max-width-responsive-one flex-container-1-responsive ">
+                    <div class="flex-container-1">
+                        <a class="logo" href="index.html">V-Folio</a>
+                    
+                        <button class="btn-hamburger flex-container-2">
+                            <div class="btn-hamburger__layer"></div>
+                            <div class="btn-hamburger__layer"></div>
+                            <div class="btn-hamburger__layer"></div>
+                        </button>
+                    </div>
+
+                    <div class="menu">
+                        <ul class="nav__list">
+                            <li><a class="nav__link" href="#home">Home</a></li>
+                            <li><a class="nav__link" href="#about">About</a></li>
+                            <li><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                            <li><a class="nav__link" href="#blog">Blog</a></li>
+                            <li><a class="nav__link" href="#contact">Contact</a></li>
+                        </ul>
+            
+                        <button class="btn-lang hide-in-desktop">En</button>
+                    </div>
+
+                    <button class="btn-lang hide-in-mobile">En</button>
+               </div>
+            </nav>
+
+            <header class="hero__content">
+                <h4 class="hero__secondary-title">Welcome</h4>
+                <h1 class="hero__title">I'm <span class="theme-clr">Stephen</span> Doe</h1>
+                <button class="btn btn--round theme-clr theme-bg-clr">UI/UX and Web Designer</button>
+            </header>
+        </section>
+        
+        <section class="wrapper set-max-width-responsive-one margin-2 grid-2-col-responsive-768">
+            <div class="design-border theme-clr push-right margin-bottom-large push-center-responsive">
+                <img class="translate-1" src="img/person.jpg" alt="">
+            </div>
+
+            <div>
+                <header>
+                    <h2 class="wrapper__title">Stephen Doe</h2>
+                    <h3 class="wrapper__secondary-title theme-clr">UI/UX Designer</h3>
+                </header>
+
+                <p class="wrapper__desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form but the majority have suffered alteration in some</p>
+                
+                <ul class="info">
+                    <li class="border-left"></li>
+                    <li class="info__content"> <span class="bullet-design"></span><span class="info__category">From:</span> Texas, US</li>
+                    <li class="info__content"> <span class="bullet-design"></span><span class="info__category">Lives In:</span> Texas, US</li>
+                    <li class="info__content"> <span class="bullet-design"></span><span class="info__category">Age:</span> 25</li>
+                    <li class="info__content"> <span class="bullet-design"></span><span class="info__category">Gender:</span> Male</li>
+                </ul>
+
+                <button class="btn btn-primary theme-clr">Download CV</button>
+            </div>
+        </section>
+
+        <section class="wrapper set-max-width-responsive-one margin-2">
+            <header class="align-center">
+                <h2 class="wrapper__title">My Skills</h2>
+            </header>
+
+            <div class="grid-2-col-responsive-768">
+                <div class="skills">
+                    <header>
+                        <h5 class="skills__title">Coding skills</h5>
+                    </header>
+    
+                    <p class="skills__component">JavaScript</p>
+                    <div class="skills__percentage-bar theme-clr">
+                        <p class="skills__percentage skills__percentage--86 theme-bg-clr-1">86%</p>
+                    </div>
+    
+                    <p class="skills__component">PHP</p>
+                    <div class="skills__percentage-bar theme-clr">
+                        <p class="skills__percentage skills__percentage--80 theme-bg-clr-1">80%</p>
+                    </div>
+                    
+                    <p class="skills__component">HTML + CSS</p>
+                    <div class="skills__percentage-bar theme-clr">
+                        <p class="skills__percentage skills__percentage--100 theme-bg-clr-1">100%</p>
+                    </div>
+                    
+                    <p class="skills__component">Phyton</p>
+                    <div class="skills__percentage-bar theme-clr">
+                        <p class="skills__percentage skills__percentage--90 theme-bg-clr-1">90%</p>
+                    </div>
+                </div>
+    
+                <div class="skills">
+                    <header>
+                        <h5 class="skills__title">Design Skills</h5>
+                    </header>
+    
+                    <p class="skills__component">UI / UX Design</p>
+                    <div class="skills__percentage-bar theme-clr">
+                        <p class="skills__percentage skills__percentage--92 theme-bg-clr-1">92%</p>
+                    </div>
+    
+                    <p class="skills__component">Web Design</p>
+                    <div class="skills__percentage-bar theme-clr">
+                        <p class="skills__percentage skills__percentage--99 theme-bg-clr-1">99%</p>
+                    </div>
+    
+                    <p class="skills__component">Logo Design</p>
+                    <div class="skills__percentage-bar theme-clr">
+                        <p class="skills__percentage skills__percentage--79 theme-bg-clr-1">79%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper set-max-width-responsive-one margin-2">
+            <div class="grid-2-col-responsive-768">
+                <div>
+                    <h2 class="wrapper__title">Education</h2>
+    
+                    <div class="timeline">
+                        <div class="border-left"></div>
+                        
+                        <div class="timeline__content">
+                            <p class="timeline__year theme-bg-clr-1">
+                                <span class="bullet-design-1 theme-bg-clr-1 theme-clr"></span> 
+                                2010
+                            </p>
+                            <div class="timeline__desc">
+                                <p class="timeline__title">Specialize of course</p>
+                                <p class="timeline__school theme-clr">University of Study</p>
+                                <p class="timeline__info">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline__content">
+                            <p class="timeline__year">
+                                <span class="bullet-design-1 bullet-design-1--outline-clr"></span> 
+                                2009
+                            </p>
+                            
+                            <div class="timeline__desc">
+                                <p class="timeline__title">Specialize of course</p>
+                                <p class="timeline__school theme-clr">University of Study</p>
+                                <p class="timeline__info">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline__content">
+                            <p class="timeline__year">
+                                <span class="bullet-design-1 bullet-design-1--outline-clr"></span> 
+                                2008
+                            </p>
+                            
+                            <div class="timeline__desc">
+                                <p class="timeline__title">Specialize of course</p>
+                                <p class="timeline__school theme-clr">University of Study</p>
+                                <p class="timeline__info">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <h2 class="wrapper__title">Experience</h2>
+    
+                    <div class="timeline">
+                        <div class="border-left"></div>
+    
+                        <div class="timeline__content">
+                            <p class="timeline__year theme-bg-clr-1">
+                                <span class="bullet-design-1 theme-bg-clr-1 theme-clr"></span>
+                                2017 - Current
+                            </p>
+                           
+                            <div class="timeline__desc">
+                                <p class="timeline__title">Specialize of course</p>
+                                <p class="timeline__school theme-clr">University of Study</p>
+                                <p class="timeline__info">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline__content">
+                            <p class="timeline__year">
+                                <span class="bullet-design-1 bullet-design-1--outline-clr"></span>
+                                2014
+                            </p>
+    
+                           <div class="timeline__desc">
+                                <p class="timeline__title">Specialize of course</p>
+                                <p class="timeline__school theme-clr">University of Study</p>
+                                <p class="timeline__info">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                           </div>
+                        </div>
+                        
+                        <div class="timeline__content">
+                            <p class="timeline__year">
+                                <span class="bullet-design-1 bullet-design-1--outline-clr"></span>
+                                2011
+                            </p>
+                            
+                            <div class="timeline__desc">
+                                <p class="timeline__title">Specialize of course</p>
+                                <p class="timeline__school theme-clr">University of Study</p>
+                                <p class="timeline__info">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="wrapper set-max-width-responsive-one margin-2">
+            <header>
+                <h4 class="wrapper__subhead theme-clr theme-bg-clr">Service</h4>
+                <h2 class="wrapper__title align-center">What can I do?</h2>
+            </header>
+
+           <div class="grid-auto-col-responsive-768">
+                <div class="wrapper__content margin-1 align-center">
+                    <div class="icon-container">
+                        <img class="icon" src="img/paint-bucket.svg" alt="">
+                    </div>
+
+                    <h5 class="wrapper__tertiary-title theme-clr">Web Design</h5>
+                    <p class="wrapper__desc">There are many variations of passages of Lorem Ipsum available</p>
+                </div>
+
+                <div class="wrapper__content margin-1 align-center">
+                    <div class="icon-container">
+                        <img class="icon" src="img/search.svg" alt="">
+                    </div>
+
+                    <h5 class="wrapper__tertiary-title theme-clr">SEO</h5>
+                    <p class="wrapper__desc">There are many variations of passages of Lorem Ipsum available</p>
+                </div>
+
+                <div class="wrapper__content margin-1 align-center">
+                    <div class="icon-container">
+                        <img class="icon" src="img/vector.svg" alt="">
+                    </div>
+
+                    <h5 class="wrapper__tertiary-title theme-clr">UI/UX Design</h5>
+                    <p class="wrapper__desc">There are many variations of passages of Lorem Ipsum available</p>
+                </div>
+
+                <div class="wrapper__content margin-1 align-center">
+                    <div class="icon-container">
+                        <img class="icon" src="img/computer.svg" alt="">
+                    </div>
+
+                    <h5 class="wrapper__tertiary-title theme-clr">Web Development</h5>
+                    <p class="wrapper__desc">There are many variations of passages of Lorem Ipsum available</p>
+                </div>
+           </div>
+        </section>
+
+        <div class="achievements">
+            <div class="set-max-width-responsive-one margin-2 grid-2-col-responsive-768-3 grid-4-col-responsive ">
+                <div class="achievements__category">
+                    <p class="achievements__number">768</p>
+                    <p class="achievements__title">Clients</p>
+                </div>
+                
+               <div  class="achievements__category">
+                    <p class="achievements__number">230</p>
+                    <p class="achievements__title">Project Compleate</p>
+               </div>
+                
+                <div  class="achievements__category">
+                    <p class="achievements__number">97</p>
+                    <p class="achievements__title">Project Ongoing</p>
+                </div>
+    
+                <div  class="achievements__category">
+                    <p class="achievements__number">699</p>
+                    <p class="achievements__title">Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="wrapper set-max-width-responsive-three ">
+            <div>
+                <header>
+                    <h4 class="wrapper__subhead theme-bg-clr theme-clr">Portfolio</h4>
+                    <h2 class="wrapper__title align-center">See my work</h2>
+                </header>
+    
+                <div class="align-center set-max-width-responsive-two">
+                    <button class="btn btn-secondary btn--round">All</button>
+                    <button class="btn btn-secondary btn--round">Apps</button>
+                    <button class="btn btn-secondary btn--round">Template</button>
+                    <button class="btn btn-secondary btn--round">IOS</button>
+                    <button class="btn btn-secondary btn--round">UI/UX</button>
+                    <button class="btn btn-secondary btn--round">Graphic</button>
+                    <button class="btn btn-secondary btn--round">Wireframes</button>
+                </div>
+            </div>
+
+            <div class="grid-2-col-responsive-768-2">
+                <div class="apps">
+                    <img class="apps__img" src="img/work/work-1.jpg" alt="">
+                    <div class="apps__caption">
+                        <p class="apps__title theme-clr">Mobile Travel App</p>
+                        <p class="apps__subtitle">Travel, Discovery</p>
+                    </div>
+                </div>
+
+                <div class="apps">
+                    <img class="apps__img" src="img/work/work-2.jpg" alt="">
+                    
+                    <div class="apps__caption">
+                        <p class="apps__title theme-clr">Music App</p>
+                        <p class="apps__subtitle">Musics</p>
+                    </div>
+                </div>
+
+                <div class="apps">
+                    <img class="apps__img" src="img/work/work-3.jpg" alt="">
+                    
+                    <div class="apps__caption">
+                        <p class="apps__title theme-clr">Gaming Dashboard</p>
+                        <p class="apps__subtitle">Games, Streaming</p>
+                    </div>
+                </div>
+
+                <div class="apps">
+                    <img class="apps__img" src="img/work/work-4.jpg" alt="">
+                    
+                    <div class="apps__caption">
+                        <p class="apps__title theme-clr">Drugs Delivery App</p>
+                        <p class="apps__subtitle">Health, Drugs</p>
+                    </div>
+                </div>
+
+                <div class="apps">
+                    <img class="apps__img" src="img/work/work-5.jpg" alt="">
+                    
+                    <div class="apps__caption">
+                        <p class="apps__title theme-clr">Musics Discover</p>
+                        <p class="apps__subtitle">Musics, Dashboard</p>
+                    </div>
+                </div>
+
+                <div class="apps">
+                    <img class="apps__img" src="img/work/work-6.jpg" alt="">
+                    
+                    <div class="apps__caption">
+                        <p class="apps__title theme-clr">Game Streaming</p>
+                        <p class="apps__subtitle">Games, Streaming</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="align-center">
+                <button class="btn btn-tertiary theme-bg-clr-1">Load More</button>
+            </div>
+        </section>
+
+        <section class="wrapper margin-2">
+            <header class="align-center">
+                <h2 class="wrapper__title">What are Clients Saying</h2>
+            </header>
+
+            <div class="testimonial testimonial-one testimonial--active grid-2-col-responsive-768">
+                <img class="testimonial__img" src="img/testimonials/testimonials_1.jpg" alt="">
+                
+                <div class="testimonial__content">
+                    <p class="testimonial__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium expedita vel magni autem, fuga maiores assumenda alias deserunt dolor. Ipsam.</p>
+                    
+                    <div class="testimonial__person">
+                        <img class="testimonial__avatar" src="img/testimonials/testimonials_1.jpg" alt="">
+                        <div>
+                            <p class="testimonial__name">Satria Nugraha</p>
+                            <p class="testimonial__position">CEO Nutshell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial testimonial-two">
+                <img class="testimonial__img" src="img/testimonials/testimonials_2.jpg" alt="">
+                
+                <div class="testimonial__content">
+                    <p class="testimonial__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium expedita vel magni autem, fuga maiores assumenda alias deserunt dolor. Ipsam.</p>
+                    
+                    <div class="testimonial__person">
+                        <img class="testimonial__avatar" src="img/testimonials/testimonials_2.jpg" alt="">
+                        <div>
+                            <p class="testimonial__name">Sellena Arrini</p>
+                            <p class="testimonial__position">CEO BigTree</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="align-center">
+                <span class="dot dot-one dot--active"></span>
+                <span class="dot dot-two"></span>
+            </div>
+        </section>
+
+        <div class="clients margin-2">
+            <div class="set-max-width-responsive-four grid-2-col-responsive-768-3 grid-3-col-responsive grid-4-col-responsive-1200">
+                <div class="clients__img-container border-bottom border-right-responsive"><img class="clients__img" src="img/logo/company_1.svg" alt=""></div>
+                <div class="clients__img-container border-bottom border-left-right-responsive"><img class="clients__img" src="img/logo/company_2.svg" alt=""></div>
+                <div class="clients__img-container border-bottom border-left-right-responsive"><img class="clients__img" src="img/logo/company_3.svg" alt=""></div>
+                <div class="clients__img-container border-bottom border-left-responsive"><img class="clients__img" src="img/logo/company_4.svg" alt=""></div>
+                <div class="show-in-tablet"></div>
+                <div class="show-in-tablet"></div>
+                <div class="clients__img-container border-right-responsive"><img class="clients__img" src="img/logo/company_5.svg" alt=""></div>
+                <div class="clients__img-container border-left-right-responsive"><img class="clients__img" src="img/logo/company_6.svg" alt=""></div>
+                <div class="clients__img-container border-left-right-responsive"><img class="clients__img" src="img/logo/company_7.svg" alt=""></div>
+                <div class="clients__img-container border-left-responsive"><img class="clients__img" src="img/logo/company_8.svg" alt=""></div>
+            </div>
+        </div>
+
+        <section class="wrapper">
+            <header class="align-center">
+                <h4 class="wrapper__subhead theme-bg-clr theme-clr">Blog</h4>
+                <h2 class="wrapper__title">Latest Post</h2>
+            </header>
+
+            <div class="set-max-width-responsive-five grid-2-col-responsive-768-4">
+                <div class="apps apps--post">
+                    <img class="apps__img" src="img/work/work-9.jpg" alt="">
+                    
+                    <div class="apps__caption">
+                        <p class="apps__secondary-title theme-clr">Technology</p>
+                        <p class="apps__title">Invision design forward fund</p>
+                        <p class="apps__post-date">May 22, 2018</p>
+                    </div>
+                </div>
+
+                <div class="apps apps--post">
+                    <img class="apps__img" src="img/work/work-6.jpg" alt="">
+                    
+                    <div class="apps__caption">
+                        <p class="apps__secondary-title theme-clr">Business</p>
+                        <p class="apps__title">Announcing a plan for small team</p>
+                        <p class="apps__post-date">May 22, 2018</p>
+                    </div>
+                </div>
+
+                <div class="apps apps--post">
+                    <img class="apps__img" src="img/work/work-1.jpg" alt="">
+                    
+                    <div class="apps__caption">
+                        <p class="apps__secondary-title theme-clr">Design</p>
+                        <p class="apps__title">5 basic tips for illustrating</p>
+                        <p class="apps__post-date">May 22, 2018</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="align-center">
+                <button class="btn btn-tertiary theme-bg-clr-1">See All Post</button>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <header class="align-center">
+                <h4 class="wrapper__subhead theme-bg-clr theme-clr">Contact</h4>
+                <h2 class="wrapper__title">Get in touch</h2>
+            </header>
+
+            <div class="set-max-width-responsive-two">
+                <div></div>
+
+                <form class="form  grid-2-col" action="#">
+                    <input class="form__input grid-span-2-col" type="text" name="name" id="name" placeholder="Your Name"/>
+                    <input class="form__input" type="text" name="email" id="email" placeholder="Email Address"/>
+                    <input class="form__input" type="text" name="subject" id="subject" placeholder="Subject"/>
+                    <textarea class="form__input grid-span-2-col" name="message" id="" cols="30" rows="10" placeholder="Enter Message Here..."></textarea>
+                    <input class="btn btn-tertiary theme-bg-clr-1" type="submit" value="Send Message">
+                </form>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="set-max-width-responsive-one">
+                <header>
+                    <h2 class="footer__title">Virtual Portfolio</h2>
+                </header>
+    
+                <div class="grid-2-col-responsive-990">
+                    <div>
+                        <h6 class="footer__category">Where to find me</h6>
+                        <p class="footer__text">1600 Amphitheatre Parkway </p> 
+                        <p class="footer__text">Mountain View, California 94043 US</p>
+                    </div>
+    
+                    <div class="grid-2-col-responsive-768">
+                        <div>
+                            <h6 class="footer__category">Follow me</h6>
+        
+                            <ul class="footer__list">
+                                <li><a class="footer__text footer__link" href="#">Instagram</a></li>
+                                <li><a class="footer__text footer__link" href="#">Facebook</a></li>
+                                <li><a class="footer__text footer__link" href="#">Twitter</a></li>
+                                <li><a class="footer__text footer__link" href="#">Youtube</a></li>
+                            </ul>
+                        </div>
+        
+                        <div>
+                            <h6 class="footer__category">Contact me</h6>
+        
+                            <p class="footer__text">info@virtual.com</p>
+                            <p class="footer__text">+8890234</p>
+                            <p class="footer__text">+813023</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <h3 class="footer__subtitle">Subscribe</h3>
+    
+                    <div class="footer__input set-max-width-responsive-two">
+                        <input class="footer__input-field" type="text" name="email" id="email" placeholder="Email Address" />
+                        <button class="btn-footer theme-bg-clr-1">Subscribe</button>
+                    </div>
+                </div>
+    
+                <p class="footer__copyright">Copyright ©2020. All right reserved | This template is made with by <a class="footer__link" href="#">MACode ID</a></p>
+            </div>
+        
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- fonts used -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" rel="stylesheet" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Frontend Mentor | Clipboard landing page</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="flex-jus-cen">
+                <img class="hero__logo-img" src="images/logo.svg" alt="" />
+            </div>
+        </div>
+
+        <section class="wrapper">
+            <div class="wrapper--responsive">
+                <header class="padding-top">
+                    <h1 class="wrapper__title">A history of everything you copy</h1>
+                    <p class="wrapper__subtitle">
+                        Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.
+                    </p>
+                </header>
+            </div>
+
+            <div class="align-center">
+                <button class="btn btn--bg-strong-cyan">Download for iOS</button>
+                <button class="btn btn--bg-light-blue">Download for Mac</button>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <div class="wrapper--responsive">
+                <header class="wrapper__header">
+                    <h2 class="wrapper__title wrapper__title--small">Keep track of your snippets</h2>
+                    <p class="wrapper__subtitle">
+                        Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your
+                        devices. Our Mac and iOS apps will help you organize everything.
+                    </p>
+                </header>
+            </div>
+
+            <article class="article">
+                <div>
+                    <img class="wrapper__img article__img" src="images/image-computer.png" alt="" />
+                </div>
+
+                <div class="article__content article__content--double-margin-left">
+                    <div class="wrapper__header">
+                        <h3 class="wrapper__title wrapper__title--small align-left">Quick Search</h3>
+                        <p class="wrapper__subtitle align-left">
+                            Easily search your snippets by content, category, web address, application, and more.
+                        </p>
+                    </div>
+
+                    <div class="wrapper__header">
+                        <h3 class="wrapper__title wrapper__title--small align-left">iCloud Sync</h3>
+                        <p class="wrapper__subtitle align-left">Instantly saves and syncs snippets across all your devices.</p>
+                    </div>
+
+                    <div class="wrapper__header">
+                        <h3 class="wrapper__title wrapper__title--small align-left">Complete History</h3>
+                        <p class="wrapper__subtitle align-left">Retrieve any snippets from the first moment you started using the app.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="wrapper wrapper--responsive">
+            <header class="wrapper__header">
+                <h1 class="wrapper__title">Access Clipboard anywhere</h1>
+                <p class="wrapper__subtitle">
+                    Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.
+                </p>
+            </header>
+            <div>
+                <img class="wrapper__img" src="images/image-devices.png" alt="" />
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <header class="wrapper__header">
+                <h1 class="wrapper__title">Supercharge your workflow</h1>
+                <p class="wrapper__subtitle">We’ve got the tools to boost your productivity.</p>
+            </header>
+
+            <article class="flex-responsive">
+                <div class="article__content-two">
+                    <div class="flex-jus-cen">
+                        <img src="images/icon-blacklist.svg" alt="" />
+                    </div>
+                    <header class="wrapper__header wrapper__header--double-margin-bot">
+                        <h2 class="wrapper__title wrapper__title--small">Create blacklists</h2>
+                        <p class="wrapper__subtitle">
+                            Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+                        </p>
+                    </header>
+                </div>
+
+                <div class="article__content-two">
+                    <div class="flex-jus-cen">
+                        <img src="images/icon-text.svg" alt="" />
+                    </div>
+                    <header class="wrapper__header wrapper__header--double-margin-bot">
+                        <h2 class="wrapper__title wrapper__title--small">Plain text snippets</h2>
+                        <p class="wrapper__subtitle">Remove unwanted formatting from copied text for a consistent look.</p>
+                    </header>
+                </div>
+
+                <div class="article__content-two">
+                    <div class="flex-jus-cen">
+                        <img src="images/icon-preview.svg" alt="" />
+                    </div>
+                    <header class="wrapper__header wrapper__header--double-margin-bot">
+                        <h2 class="wrapper__title wrapper__title--small">Sneak preview</h2>
+                        <p class="wrapper__subtitle">Quick preview of all snippets on your Clipboard for easy access.</p>
+                    </header>
+                </div>
+            </article>
+        </section>
+
+        <div class="wrapper flex-jus-cen flex-jus-cen--dir-col flex-responsive">
+            <img class="wrapper__img wrapper__img--famous-company-logo" src="images/logo-google.png" alt="" />
+            <img class="wrapper__img wrapper__img--famous-company-logo" src="images/logo-ibm.png" alt="" />
+            <img class="wrapper__img wrapper__img--famous-company-logo" src="images/logo-microsoft.png" alt="" />
+            <img class="wrapper__img wrapper__img--famous-company-logo" src="images/logo-hp.png" alt="" />
+            <img class="wrapper__img wrapper__img--famous-company-logo" src="images/logo-vector-graphics.png" alt="" />
+        </div>
+
+        <section class="wrapper">
+            <header class="wrapper__header">
+                <h1 class="wrapper__title">Clipboard for iOS and Mac OS</h1>
+                <p class="wrapper__subtitle">
+                    Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
+                </p>
+            </header>
+
+            <div class="align-center">
+                <button class="btn btn--bg-strong-cyan">Download for iOS</button>
+                <button class="btn btn--bg-light-blue">Download for Mac</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="wrapper wrapper--remove-pad-bot flex-jus-cen flex-jus-cen--dir-col flex-responsive">
+                <div>
+                    <img class="footer__logo" src="images/logo.svg" alt="" />
+                </div>
+                <ul class="flex-jus-cen flex-jus-cen--dir-col footer__link-list flex-responsive align-left">
+                    <div>
+                        <li><a class="wrapper__title wrapper__title--small footer__link" href="">FAQs</a></li>
+                        <li><a class="wrapper__title wrapper__title--small footer__link" href="">Contact Us</a></li>
+                    </div>
+                    <div>
+                        <li><a class="wrapper__title wrapper__title--small footer__link" href="">Privacy Policy</a></li>
+                        <li><a class="wrapper__title wrapper__title--small footer__link" href="">Press Kit</a></li>
+                    </div>
+                    <li><a class="wrapper__title wrapper__title--small footer__link" href="">Install Guide</a></li>
+                </ul>
+                <div class="color">
+                    <img class="social-media-link" src="images/icon-facebook.svg" alt="" />
+                    <img class="social-media-link" src="images/icon-twitter.svg" alt="" />
+                    <img class="social-media-link" src="images/icon-instagram.svg" alt="" />
+                </div>
+            </div>
+        </footer>
+
+        <div>
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+                <a href="#">John Harold M. Beltran</a>.
+            </p>
+        </div>
+    </body>
+</html>

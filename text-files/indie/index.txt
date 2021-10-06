@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>IndieBrew</title>
+    </head>
+    <body> 
+        <section class="hero">
+            <nav class="nav">
+                <img class="logo" src="IndieBrew Starter Files/Assets/Logo.svg" alt="">
+    
+                <img class="hamburger-icon" src="IndieBrew Starter Files/Assets/Hamburger Menu.svg" alt="">
+    
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#">Pricing</a></li>
+                    <li><a class="nav__link" href="#">Support</a></li>
+                    <li><button class="btn btn-nav"><span class="btn__text">Get Started</span> -- it's free</button></li>
+                </ul>
+            </nav>
+
+            <div class="grid-2-col-responsive-900 grid-align-center">
+                <img class="hero__img" src="IndieBrew Starter Files/Assets/Feed Mockup.png" alt="">
+            
+                <div class="hero__content">
+                    <header>
+                        <h1 class="hero__title">Your weekly personal feed digest.</h1>
+                    </header>
+
+                    <p class="hero__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio in esse, similique amet quae facere atque magnam.</p>
+
+                    <button class="btn"><span class="btn__text">Get Started</span> -- it's free</button>
+                    
+                    <img src="IndieBrew Starter Files/Assets/User Avatars.svg" alt="">
+
+                    <p class="hero__desc">Join <span class="accent">34,642</span> IndieBrewers in curating their personal digest.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper grid-2-col-responsive grid-align-center">
+            <img class="wrapper__img" src="IndieBrew Starter Files/Assets/Social Media Icons.png" alt="">
+
+            <div class="wrapper__content grid-align-col-1">
+                <header>
+                    <h2 class="wrapper__title">Curate your feed from dozen of resources.</h2>
+                </header>
+    
+                <p class="wrapper__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo pariatur, nostrum eius nam facere id consequuntur quaerat, enim quia veritatis quam.</p>
+    
+                <a class="link" href="#">See full list of resources</a>
+            </div>
+        </section>
+
+
+        <section class="wrapper grid-2-col-responsive-two grid-align-center">
+            <img class="wrapper__img" src="IndieBrew Starter Files/Assets/Phone Mockup.png" alt="">
+
+            <div>
+                <header>
+                    <h2 class="wrapper__title">Access your feed from the comfort of your phone.</h2>
+                </header>
+
+                <p class="wrapper__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad magni at consequuntur natus nam. Quasi, veniam?</p>
+
+                <a class="link" href="">Sign up for the wait list</a>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div>
+                <div class="company">IndieBrew</div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quidem eaque reprehenderit voluptatibus a quaerat necessitatibus odio?</p>
+
+                <p>Made with heart in the UK.</p>
+            </div>
+
+            <div class="grid-2-col grid-4-col-responsive">
+                <div>
+                    <h4 class="category">Sitemap</h4>
+    
+                    <ul class="list">
+                        <li><a class="list__link" href="">Homepage</a></li>
+                        <li><a class="list__link" href="">Pricing</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h4 class="category">Resources</h4>
+    
+                    <ul class="list">
+                        <li><a class="list__link" href="#">Support</a></li>
+                        <li><a class="list__link" href="#">Contact</a></li>
+                        <li><a class="list__link" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h4 class="category">Company</h4>
+    
+                    <ul class="list">
+                        <li><a class="list__link" href="#">About</a></li>
+                        <li><a class="list__link" href="#">Customers</a></li>
+                        <li><a class="list__link" href="#">Blog</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h4 class="category">Portfolios</h4>
+
+                    <ul class="list">
+                        <li><a class="list__link" href="#">HackerNews</a></li>
+                        <li><a class="list__link" href="#">Reddit</a></li>
+                        <li><a class="list__link" href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const HAMBUGER_ICON = document.querySelector(".hamburger-icon").addEventListener("click", showOrHideMenu);
+            const MENU = document.querySelector(".nav__list");
+            
+            function showOrHideMenu() {
+                MENU.classList.toggle("show");
+            }
+        </script>
+    </body>
+</html>

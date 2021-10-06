@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Comment Template</title>
+    </head>
+    <body>
+        <div class="desktop-bg-top"></div>
+        <div class="desktop-bg-bottom"></div>
+       <div class="container">
+            <div class="comment">
+                <div class="comment__section">
+                    <div class="grid-2-col">
+                        <div>
+                            <img class="comment__avatar" src="Assets/User Avatar.png" alt="">
+                            <div class="line"></div>
+                        </div>
+        
+                        <div>
+                            <p class="comment__user"><span class="comment__username">adamsdavid</span> <span class="comment__time-posted">20 hours ago</span></p>
+                            <p class="comment__desc">I genuinely think Codewell's commnunnity is AMAZING. It's just starting out but the templates on there are amazing</p>
+        
+                            <div class="comment__like-section">
+                                <span class="comment__like">
+                                    <img src="Assets/Up.svg" alt="">
+                                    <span class="comment__total-like">2</span>
+                                    <img src="Assets/Down.svg" alt="">
+                                </span>
+                                <a class="comment__link" href="#">Reply</a>
+                                <a class="comment__link" href="#">Report</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment__reply comment__section">
+                            <div class="grid-2-col">
+                                <div>
+                                    <img class="comment__avatar" src="Assets/User Avatar-1.png" alt="">
+                                    <div class="line"></div>
+                                </div>
+                
+                                <div>
+                                    <div class="comment__user">
+                                        <span class="comment__username">saramay</span> 
+                                        <span class="comment__time-posted">16 hours ago</span>
+                                    </div>
+
+                                    <p class="comment__desc">I agree. I've been coding really well(pun intended) ever since I started practicing on their templates hehe</p>
+                
+                                    <div class="comment__like-section">
+                                        <span class="comment__like">
+                                            <img src="Assets/Up.svg" alt="">
+                                            <span class="comment__total-like">2</span>
+                                            <img src="Assets/Down.svg" alt="">
+                                        </span>
+                                        <a class="comment__link" href="#">Reply</a>
+                                        <a class="comment__link" href="#">Report</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="comment__reply comment__section grid-2-col">
+                                    <div>
+                                        <img class="comment__avatar" src="Assets/User Avatar-2.png" alt="">
+                                        <div class="line"></div>
+                                    </div>
+                    
+                                    <div>
+                                        <div>
+                                            <div class="comment__user">
+                                                <span class="comment__username">saramay</span> 
+                                                <span class="comment__time-posted">16 hours ago</span>
+                                            </div>
+                                            <p class="comment__desc">Okay, this comment wins</p>
+                                        </div>
+                    
+                                        <div class="comment__like-section">
+                                            <span class="comment__like">
+                                                <img src="Assets/Up.svg" alt="">
+                                                <span class="comment__total-like">2</span>
+                                                <img src="Assets/Down.svg" alt="">
+                                            </span>
+
+                                            <a class="comment__link" href="#">Reply</a>
+                                            <a class="comment__link" href="#">Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="comment__section grid-2-col">
+                    <div>
+                        <img class="comment__avatar" src="Assets/User Avatar-3.png" alt="">
+                        <div class="line"></div>
+                    </div>
+    
+                    <div>
+                        <p class="comment__user"><span class="comment__username">andrew231</span> <span class="comment__time-posted">20 hours ago</span></p>
+                        <p class="comment__desc">Thank for making this, super helpful</p>
+    
+                        <div class="grid-3-col">
+                            <span>
+                                <img src="Assets/Up.svg" alt="">
+                                <span class="comment__total-like">2</span>
+                                <img src="Assets/Down.svg" alt="">
+                            </span>
+                            <a class="comment__link" href="#">Reply</a>
+                            <a class="comment__link" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+.logo {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+.wrapper-one {
+    padding: 2rem;
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    &__content {
+        text-align: center;
+        color: white;
+        margin: 2rem 0;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__sign-in {
+        text-align: center;
+    }
+}
+
+.form {
+    &__label {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-family: 'Inter', sans-serif;
+    }
+
+    &__checkbox {
+        display: block;
+        margin-top: 0.4rem;
+        margin-right: 0.5rem;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    &__terms {
+        display: flex;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    &__link {
+        color: rgb(129, 50, 194);
+        font-weight: 600;
+    }
+
+    &__sign-in {
+        color: rgb(129, 50, 194);
+    }
+}
+
+.btn-sign-up {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+
+    &__active {
+        background-color: white !important;
+    }
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    margin: 0 0.1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media all and (min-width: 900px) {
+
+    .sign-up-section {
+        &__hero {
+            background-color: rgb(129, 50, 194);
+            padding: 7rem 2rem;
+        }
+    }
+
+    .hide {
+        display: block;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .sign-up-section__hero {
+        padding: 7rem 6rem 0;
+        min-height: 100vh;
+    }
+
+    .wrapper-one__content {
+        padding: 0 5rem;
+    }
+
+    .wrapper-one {
+        padding: 2em 9em 0;
+    }
+}

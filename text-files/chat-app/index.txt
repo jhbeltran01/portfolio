@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- font used: RUBIK -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet" />
+        <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Frontend Mentor | [Challenge Name Here]</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 16px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box left-box"></div>
+
+        <div class="flex-center flex--dir-col content">
+            <div class="flex-center">
+                <div class="phone">
+                    <div class="phone__inner">
+                        <div class="user">
+                            <div>
+                                <div class="upper-white"></div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-center">
+                                    <div>
+                                        <div class="arrow upper"></div>
+                                        <div class="arrow lower"></div>
+                                    </div>
+                                </div>
+                                <div class="flex-center">
+                                    <img class="avatar--img" src="images/avatar.jpg" alt="avatar" />
+                                </div>
+                                <div class="avatar--info flex-center">
+                                    <div>
+                                        <p class="name">Samuel Green</p>
+                                        <p class="status">Available to Walk</p>
+                                    </div>
+                                </div>
+                                <div class="flex-center wrapper">
+                                    <div class="align-right">
+                                        <div class="dot sep"></div>
+                                        <div class="dot sep"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="left message">That sounds great. I’d be happy to discuss more.</div>
+                            <div class="left message">Could you send over some pictures of your dog, please?</div>
+                            <div class="flex-right">
+                                <img class="shared-image" src="images/dog-image-1.jpg" alt="" />
+                                <img class="shared-image" src="images/dog-image-2.jpg" alt="" />
+                                <img class="shared-image" src="images/dog-image-3.jpg" alt="" />
+                            </div>
+                            <div class="flex-right">
+                                <div class="right message">Here are a few pictures. She’s a happy girl!</div>
+                            </div>
+                            <div class="flex-right">
+                                <div class="right right--margin-bottom message">Can you make it?</div>
+                            </div>
+                            <div class="left message">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+                            <div class="rate"><span class="time">30 minute walk</span> <span class="fee">$29</span></div>
+                            <div class="rate"><span class="time">1 hour walk</span> <span class="fee">$49</span></div>
+                        </div>
+                        <div class="message-box flex">
+                            <div class="placeholder">
+                                Type a message…
+                                <span class="send-btn">
+                                    <div class="send-arrow send-upper"></div>
+                                    <div class="send-arrow send-lower"></div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="hero">
+                <header class="hero__header">Simple booking</header>
+                <p class="hero__desc">
+                    Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once
+                    the walk has been completed you can rate your walker and book again all through the chat.
+                </p>
+            </article>
+        </div>
+
+        <div class="box right-box"></div>
+
+        <div class="attribution flex-center">
+            <p>
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+                <a href="#">John Harold M. Beltran</a>.
+            </p>
+        </div>
+    </body>
+</html>

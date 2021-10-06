@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chirp</title>
+</head>
+<body>
+    <section class="hero">
+        <nav class="navbar">
+            <div>
+                <i><a class="navbar__logo" href="#">Chirp.</a></i>
+            </div>
+    
+            <img class="hamburger-icon" src="Chirp Starter Files/Assets/Hamburger Menu.svg" alt="">
+            <ul class="navbar__list">
+                    
+                    <li><a class="navbar__link" href="#">Home</a></li>
+                    <li><a class="navbar__link" href="#">Pricing</a></li>
+                    <li><a class="navbar__link" href="#">FAQ</a></li>
+                    <li>
+                        <button class="navbar__btn btn">
+                            <img class="img" src="Chirp Starter Files/Assets/Twitter.svg" alt="">
+                            <span class="btn__text">Sign in with Twitter</span>
+                        </button>
+                    </li>
+                </ul>
+    
+                
+        </nav>
+        
+       <div class="grid-2-col-responsive container">
+            <img class="hero__img" src="Chirp Starter Files/Assets/Hero Image (Desktop View).png" alt="">
+
+            <div class="grid-align-col-1">
+                <header>
+                    <h1 class="hero__title">Twitter analytics taken to a whole new level.</h1>
+                </header>
+
+                <p class="hero__desc">Chirp is suite of Twitter analytics that will help you better understand your audience, which tweets they like, and the most importantly, when they are the most active on Twitter.</p>
+
+                <div class="flex-responsive">
+                    <button class="btn btn--responsive">
+                        <img class="img" src="Chirp Starter Files/Assets/Twitter.svg" alt="">
+                        <span class="btn__text">Sign in with Twitter</span>
+                    </button>
+
+                    <a class="link" href="#">
+                        <span class="link__text">Learn more</span>
+                        <img class="right-arrow " src="Chirp Starter Files/Assets/right-arrow.svg" alt="">
+                    </a>
+                </div>
+
+                <div>
+                    <img src="Chirp Starter Files/Assets/userAvatar09.svg" alt="">
+                    <img class="overflow" src="Chirp Starter Files/Assets/userAvatar08.svg" alt="">
+                    <img class="overflow" src="Chirp Starter Files/Assets/userAvatar07.svg" alt="">
+                    <img class="overflow" src="Chirp Starter Files/Assets/userAvatar06.svg" alt="">
+                    <img class="overflow" src="Chirp Starter Files/Assets/userAvatar05.svg" alt="">
+                    <img class="overflow" src="Chirp Starter Files/Assets/userAvatar04.svg" alt="">
+                    <img class="overflow" src="Chirp Starter Files/Assets/userAvatar03.svg" alt="">
+                    <img class="overflow" src="Chirp Starter Files/Assets/userAvatar02.svg" alt="">
+                    <img class="overflow" src="Chirp Starter Files/Assets/userAvatar01.svg" alt="">
+                </div>
+
+                <p class="hero__desc">Join the <span class="highlight">195</span> others who have analyzed their followers and scheduled <span class="highlight">1342</span> tweets!</p>
+            </div>
+       </div>
+    </section>
+
+
+    <section class="wrapper container">
+        <header>
+            <h3 class="wrapper__title">Features that help you Tweet smarter.</h3>
+        </header>
+
+        <div class="grid-2-col-responsive">
+            <div class="card">
+                <h6 class="card__title">Analytics</h6>
+                <p class="card__desc">We constantly monitor your audience as it grows so you can Tweet when your followers are most likely to be online and ready to engage with your content.</p>
+            </div>
+
+            <div class="card">
+                <h6 class="card__title">Smart Analyzer</h6>
+                <p class="card__desc">Chiip automatically recognizes your followers' most active times and automatically sends you notification if you're missing out on an oppurtunity.</p>
+            </div>
+
+            <div class="card">
+                <h6 class="card__title">Schedule Your Tweets</h6>
+                <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, maxime quos sed quis obcaecati tempore ab aut ratione impedit natus voluptates voluptatem deleniti reprehenderit, dolor consequuntur.</p>
+            </div>
+
+            <div class="card">
+                <h6 class="card__title">Dark Mode</h6>
+                <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat libero eligendi dolorum dolor debitis facere nobis molestias beatae? Obcaecati similique laboriosam pariatur deserunt in dignissimos doloribus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper wrapper--bg-aqua container">
+        <header>
+            <h3 class="wrapper__title">What our customers say</h3>
+        </header>
+
+        <div class="grid-3-col-responsive">
+            <div class="card-testimonial">
+                <div class="card-testimonial__profile">
+                    <img class="card-testimonial__profile-img" src="Chirp Starter Files/Assets/userAvatar01.svg" alt="">
+    
+                    <div>
+                        <p class="card-testimonial__name">Sara May</p>
+                        <p class="card-testimonial__twitter-account">@sara_may</p>
+                    </div>
+    
+                    <img class="card-testimonial__icon" src="Chirp Starter Files/Assets/Twitter (Blue).svg" alt="">
+                </div>
+    
+                <p class="card-testimonial__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repudiandae quasi illo fugit! Officiis, nostrum.</p>
+    
+                <div class="card-testimonial__like">
+                    <div class="card-testimonial__like-total">
+                        <img src="Chirp Starter Files/Assets/Like.svg" alt="">
+                        <span class="total-like">2</span>
+                    </div>
+                    <p>March 2, 2021</p>
+                </div>
+            </div>
+    
+    
+            <div class="card-testimonial">
+                <div class="card-testimonial__profile">
+                    <img class="card-testimonial__profile-img" src="Chirp Starter Files/Assets/userAvatar04.svg" alt="">
+    
+                    <div>
+                        <p class="card-testimonial__name">Jack Scott</p>
+                        <p class="card-testimonial__twitter-account">@jackscott_</p>
+                    </div>
+    
+                    <img class="card-testimonial__icon" src="Chirp Starter Files/Assets/Twitter (Blue).svg" alt="">
+                </div>
+    
+                <p class="card-testimonial__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione soluta eligendi, obcaecati est illum ullam sit repellat quis non corporis tempore alias qui aliquam maxime aspernatur! Dolorem, sed. Rerum voluptates autem voluptatem quae!</p>
+    
+                <div class="card-testimonial__like">
+                    <div class="card-testimonial__like-total">
+                        <img src="Chirp Starter Files/Assets/Like.svg" alt="">
+                        <span class="total-like">32</span>
+                    </div>
+                    <p>March 2, 2021</p>
+                </div>
+            </div>
+    
+            <div class="card-testimonial">
+                <div class="card-testimonial__profile">
+                    <img class="card-testimonial__profile-img" src="Chirp Starter Files/Assets/userAvatar08.svg" alt="">
+    
+                    <div>
+                        <p class="card-testimonial__name">Jessica May</p>
+                        <p class="card-testimonial__twitter-account">@may98</p>
+                    </div>
+    
+                    <img class="card-testimonial__icon" src="Chirp Starter Files/Assets/Twitter (Blue).svg" alt="">
+                </div>
+    
+                <p class="card-testimonial__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat assumenda corrupti animi magnam.</p>
+                
+                <div class="card-testimonial__like">
+                    <div class="card-testimonial__like-total">
+                        <img src="Chirp Starter Files/Assets/Like.svg" alt="">
+                        <span class="total-like">221</span>
+                    </div>
+                    
+                    <p>March 2, 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <header class="wrapper__header">
+            <h3 class="wrapper__title">One simple price plan.</h3>
+            <p class="wrapper__desc">Start growing your Twitter account by analyzing your follower's patterns</p>
+        </header>
+
+        <div class="card-offer">
+            <div class="card-offer__content">
+                <div class="card-offer__section">
+                    <p class="card-offer__monthly">Monthly</p>
+                    <p class="card-offer__monthly"><span class="card-offer__payment">$9</span>/mo</p>
+                </div>
+    
+                <div class="card-offer__section">
+                    <p class="card-offer__benefits">
+                        <img src="Chirp Starter Files/Assets/Checkmark.svg" alt="">
+                        <span>Unlimited* scheduled tweets and threads.</span>
+                    </p>
+
+                    <p class="card-offer__benefits">
+                        <img src="Chirp Starter Files/Assets/Checkmark.svg" alt="">
+                        <span>Schedule up to 3 weeks in advance.</span>
+                    </p>
+
+                    <p class="card-offer__benefits">
+                        <img src="Chirp Starter Files/Assets/Checkmark.svg" alt="">
+                        <span>Real time audience analytics tracking up to 5k followers.</span>
+                    </p>
+                </div>
+            </div>
+
+            <button class="btn">
+                <img src="Chirp Starter Files/Assets/Twitter.svg" alt="">
+                <span class="btn__text">Start Trial with Twitter</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <i><a class="footer__logo" href="#">Chirp.</a></i>
+
+        <div class="footer__terms">
+            <a class="footer__link" href=""><img src="Chirp Starter Files/Assets/Twitter (Black).svg" alt=""></a>
+            <a class="footer__link" href="">Privacy Policy</a>
+            <a class="footer__link" href="">Terms of Use</a>
+        </div>
+    </footer>
+
+    <div class="credits">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+    <script src="main.js"></script>
+</body>
+</html>

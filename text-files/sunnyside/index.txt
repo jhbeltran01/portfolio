@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		
+		<link rel="stylesheet" href="css/style.css">
+		
+		<title>Frontend Mentor | Sunnyside agency landing page</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution { font-size: 11px; text-align: center; }
+			.attribution a { color: hsl(228, 45%, 44%); }
+		</style>
+	</head>
+	<body>
+		<div class="hero"> 
+			<nav class="navbar">
+				<img class="navbar__logo" src="images/logo.svg" alt="">
+				
+				<div>
+					<img class="hamburger-icon" src="images/icon-hamburger.svg" alt="">
+				</div>
+				
+				<ul class="navbar__list">
+					<li><a class="navbar__link" href="">About</a></li>
+					<li><a class="navbar__link" href="">Services</a></li>
+					<li><a class="navbar__link" href="">Projects</a></li>
+					<li><a class="navbar__link" href="">Contact</a></li>
+				</ul>
+			</nav>
+
+			<h1 class="hero__header">We are creatives</h1>
+
+
+			<img class="hero__img" src="images/icon-arrow-down.svg" alt="">
+		</div>
+
+		
+
+		<section class="wrapper grid-2-col-responsive">
+			<picture class="grid-align-col-2">
+				<source media="(min-width: 800px)" srcset="images/desktop/image-transform.jpg">
+				<img class="wrapper__img " src="images/mobile/image-transform.jpg" alt="">
+			</picture>
+			
+			<div class="wrapper__content wrapper__content--responsive grid-align-col-1">
+				<header>
+					<h3 class="wrapper__title wrapper__title--responsive">Transform your brand</h3>
+				</header>
+	
+				<p class="wrapper__desc-one">We are a full-service creative agency specializing in helping brands grow fast. 
+					Engage your clients through compelling visuals that do most of the marketing for you.</p>
+	
+				<a class="wrapper__link" href="">
+					<div class="wrapper__link-underline wrapper__link-underline--clr-one"></div>
+					Learn more
+				</a>
+			</div>
+		</section>
+
+		
+
+		<section class="wrapper grid-2-col-responsive">
+			<picture>
+				<source media="(min-width: 800px)" srcset="images/desktop/image-stand-out.jpg">
+				<img class="wrapper__img" src="images/mobile/image-stand-out.jpg" alt="">
+			</picture>
+
+			<div class="wrapper__content wrapper__content--responsive">
+				<header>
+					<h3 class="wrapper__title wrapper__title--responsive">Stand out to the right audience</h3>
+				</header>
+
+				<p class="wrapper__desc-one">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+
+				<a class="wrapper__link" href="">
+					<div class="wrapper__link-underline wrapper__link-underline--clr-two"></div>
+					Learn more
+				</a>
+			</div>
+		</section>
+
+		<section class="grid-2-col-responsive">
+			<article class="wrapper__article">
+				<div class="wrapper__img-container">
+					<picture>
+						<source media="(min-width: 800px)" srcset="images/desktop/image-graphic-design.jpg">
+						<img class="wrapper__img wrapper__img-fit" src="images/mobile/image-graphic-design.jpg" alt="">
+					</picture>
+				</div>
+				
+				<div class="wrapper__content wrapper__content--position-absolute">
+					<header>
+						<h4 class="wrapper__title">Graphic Design</h4>
+					</header>
+					<p class="wrapper__desc-two wrapper__desc-two--clr-one">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+				</div>
+			</article>
+
+
+			<article class="wrapper__article">
+				<div class="wrapper__img-container">
+					<picture>
+						<source media="(min-width: 800px)" srcset="images/desktop/image-photography.jpg">
+						<img class="wrapper__img wrapper__img-fit" src="images/mobile/image-photography.jpg" alt="">
+					</picture>
+				</div>
+				
+				<div class="wrapper__content wrapper__content--position-absolute">
+					<header>
+						<h4 class="wrapper__title">Photography</h4>
+					</header>
+					<p class="wrapper__desc-two wrapper__desc-two--clr-two">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+				</div>
+			</article>
+		</section>
+
+		<section class="section">
+			<header>
+				<h3 class="section__title">Client testimonials</h3>
+			</header>
+
+			<div class="grid-3-col-responsive grid-center">
+				<article class="section__content">
+					<img class="section__img" src="images/image-emily.jpg" alt="">
+					
+					<p class="section__testimonial">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+					
+					<div class="client">
+						<p class="client__name"><strong>Emily R.</strong></p>
+						<p class="client__position">Marketing Director</p>
+					</div>
+				</article>
+	
+				<article class="section__content">
+					<img class="section__img" src="images/image-thomas.jpg" alt="">
+					
+					<p class="section__testimonial">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+					
+					<div class="client">
+						<p class="client__name"><strong>Thomas S.</strong></p>
+						<p class="client__position">Chief Operating Officer</p>
+					</div>
+				</article>
+	
+				<article class="section__content">
+					<img class="section__img" src="images/image-jennie.jpg" alt="">
+					
+					<p class="section__testimonial">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+					
+					<div class="client">
+						<p class="client__name"><strong>Jennie F.</strong></p>
+						<p class="client__position">Business Owner</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="gallery grid-4-col-responsive ">
+			<picture class="picture">
+				<source media="(min-width: 800px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
+				<img class="wrapper__img" src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+			</picture>
+
+			<picture class="picture">
+				<source media="(min-width: 800px)" srcset="images/desktop/image-gallery-orange.jpg">
+				<img class="wrapper__img" src="images/mobile/image-gallery-orange.jpg" alt="">
+			</picture>
+
+			<picture class="picture">
+				<source media="(min-width: 800px)" srcset="images/desktop/image-gallery-cone.jpg">
+				<img class="wrapper__img" src="images/mobile/image-gallery-cone.jpg" alt="">
+			</picture>
+
+			<picture class="picture">
+				<source media="(min-width: 800px)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
+				<img class="wrapper__img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+			</picture>
+		</section>
+		
+
+		<footer class="footer">
+			<img class="footer__img" src="images/logo.svg" alt="">
+
+			<ul class="footer__list">
+				<li class="margin-right"><a class="footer__link" href="">About</a></li>
+				<li class="margin-right"><a class="footer__link" href="">Services</a></li>
+				<li><a class="footer__link" href="">Projects</a></li>
+			</ul>
+
+			<div>
+				<a href=""><img class="footer__icon" src="images/icon-facebook.svg" alt=""></a>
+				<a href=""><img class="footer__icon" src="images/icon-instagram.svg" alt=""></a>
+				<a href=""><img class="footer__icon" src="images/icon-twitter.svg" alt=""></a>
+				<a href=""><img class="footer__icon" src="images/icon-pinterest.svg" alt=""></a>
+			</div>
+		</footer>
+
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="#">Your Name Here</a>.
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>

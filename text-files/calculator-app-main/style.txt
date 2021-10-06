@@ -1,0 +1,261 @@
+@import "variables";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.calc {
+    padding: 1.5rem;
+    max-width: 600px;
+
+    &__header {
+        margin-bottom: 2rem;
+    }
+
+    &__theme-title {
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+    }
+}
+
+.toogle {
+    align-items: end;
+    gap: 5px;
+
+    &__bar {
+        border-radius: 50px;
+        width: 60px;
+        padding: 0.4rem;
+        cursor: pointer;
+    }
+
+    &__theme-num {
+        letter-spacing: 5px;
+        margin-left: 0.3rem;
+        font-size: 0.8rem;
+    }
+}
+
+.screen {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    color: $white;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.keypad {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.btn {
+    &-toogle {
+        width: 15px;
+        height: 15px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &-key {
+        font-size: 2rem;
+        border-radius: 5px;
+        border: 0;
+        padding: 0.5rem;
+        height: 70px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+.two,
+.three {
+    opacity: 0;
+}
+
+/*************
+    THEME 1
+*************/
+
+.theme-1-clr-primary {
+    color: $very-dark-grayish-blue;
+}
+
+.theme-1-clr-secondary {
+    color: $white;
+}
+
+.theme-1-bg-primary {
+    background-color: $very-dark-desaturated-blue-one;
+}
+
+.theme-1-bg-secondary {
+    background-color: $very-dark-desaturated-blue-two;
+}
+
+.theme-1-bg-tertiary {
+    background-color: $very-dark-desaturated-blue-three;
+}
+
+.theme-1-key-bg-primary {
+    background-color: $light-grayish-orange;
+    box-shadow: 0 5px 0 $grayish-orange;
+}
+
+.theme-1-key-bg-secondary {
+    background-color: $desaturated-dark-blue-one;
+    box-shadow: 0 5px 0 $desaturated-dark-blue-two;
+}
+
+.theme-1-key-toggle-bg-tertiary {
+    background-color: $red;
+}
+
+.theme-1-key-box-shadow {
+    box-shadow: 0 5px 0 $dark-red;
+}
+
+/*************
+    END OF THEME 1
+*************/
+
+/*************
+    THEME 2
+*************/
+
+.theme-2-clr-primary {
+    color: $very-dark-grayish-yellow;
+}
+
+.theme-2-clr-secondary {
+    color: $very-dark-grayish-yellow;
+}
+
+.theme-2-bg-primary {
+    background-color: $light-gray;
+}
+
+.theme-2-bg-secondary {
+    background-color: $grayish-red;
+}
+
+.theme-2-bg-tertiary {
+    background-color: $very-light-gray;
+}
+
+.theme-2-key-bg-primary {
+    background-color: $light-grayish-yellow;
+    box-shadow: 0 5px 0 $dark-grayish-orange;
+}
+
+.theme-2-key-bg-secondary {
+    background-color: $dark-moderate-cyan;
+    box-shadow: 0 5px 0 $very-dark-cyan;
+    color: white;
+}
+
+.theme-2-key-toggle-bg-tertiary {
+    background-color: $orange;
+    color: $white;
+}
+
+.theme-2-key-box-shadow {
+    box-shadow: 0 5px 0 $dark-orange;
+}
+
+/*************
+    END OF THEME 2
+*************/
+
+/*************
+    THEME 3
+*************/
+
+.theme-3-clr-primary {
+    color: $light-yellow;
+}
+
+.theme-3-clr-secondary {
+    color: $very-dark-blue;
+}
+
+.theme-3-clr-tertiary {
+    color: $white;
+}
+
+.theme-3-bg-primary {
+    background-color: $very-dark-violet-one;
+}
+
+.theme-3-bg-secondary {
+    background-color: $very-dark-violet-one;
+}
+
+.theme-3-key-bg-primary {
+    background-color: $very-dark-violet;
+    box-shadow: 0 5px 0 $dark-magenta;
+}
+
+.theme-3-key-bg-secondary {
+    background-color: $dark-violet;
+    box-shadow: 0 5px 0 $vivid-magenta;
+}
+
+.theme-3-key-toggle-bg-tertiary {
+    background-color: $pure-cyan;
+}
+
+.theme-3-key-box-shadow {
+    box-shadow: 0 5px 0 $dark-magenta;
+}
+
+/*************
+    END OF THEME 3
+*************/
+
+.flex-just-between-align-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.flex-just-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(70px, 400px));
+    gap: 20px;
+}
+
+.grid-span-col-2 {
+    grid-column: span 2 / auto;
+}

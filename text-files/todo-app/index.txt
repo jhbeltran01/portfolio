@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="main.js"></script>
+		<title>Frontend Mentor | Todo app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution { font-size: 11px; text-align: center; }
+			.attribution a { color: hsl(228, 45%, 44%); }
+		</style>
+	</head>
+	<body>
+		<div class="bg-top"></div>
+
+		<div class="wrapper">
+			<header class="wrapper__header">
+				<h1 class="wrapper__title">TODO</h1>
+			</header>
+
+			<div class="textbox">
+				<button class="textbox__add-task"></button>
+				<input class="textbox__input-field" type="text" name="newTask" id="new-task" placeholder="Create a new todo..." />
+			</div>
+
+			<div class="wrapper__content">
+				<ul class="todo">
+					<!-- <li class="todo__task">
+						<button class="btn-radio"><img class="todo__img" src="images/icon-check.svg" alt=""></button>
+						<span>Jog around 3x</span>
+						<button class="btn-del"><img class="cross-icon" src="images/icon-cross.svg" alt=""></button>
+					</li> -->
+				</ul>
+
+
+				<div class="wrapper__content-bottom">
+					<div>
+						<p class="task-number"><span class="uncompleted-task">0</span> uncompleted task</p>
+					</div>
+					
+					<div class="filter-list-desktop">
+						<button class="btn btn-all">All</button>
+						<button class="btn btn-active">Active</button>
+						<button class="btn btn-completed">Completed</button>
+					</div>
+					
+					<div>
+						<button class="btn btn-clear">Clear Completed</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="filter-list-mobile">
+				<div>
+					<button class="btn btn-filter all active-category">All</button>
+					<button class="btn btn-filter active">Active</button>
+					<button class="btn btn-filter completed">Completed</button>
+				</div>
+			</div>
+
+			<p class="hide-in-mobile">Drag and drop to reorder list</p>
+		</div>
+		
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
+</html>

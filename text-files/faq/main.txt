@@ -1,0 +1,10 @@
+document.querySelectorAll(".card__question").forEach(question => question.addEventListener("click", showInfo));
+
+
+function showInfo(event) {
+    let info = event.target.nextElementSibling;
+    let arrowIcon = event.target.firstElementChild;
+    
+    info.classList.toggle("show");
+    arrowIcon.classList.toggle("rotate");
+}

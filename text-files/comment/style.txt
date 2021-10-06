@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+:root {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    background: linear-gradient(rgb(223, 175, 87),rgb(223, 175, 87),rgb(206, 89, 109), rgb(206, 89, 109));
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.comment {
+    padding: 2rem 1rem 6rem;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    max-width: 800px;
+
+    &__section {
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    &__avatar {
+        width: 50px;
+    } 
+
+    &__user {
+        margin-bottom: 0.5rem;
+
+
+        &name {
+            margin-right: 0.5rem;
+            font-weight: 500;
+        }
+    }
+
+    &__time-posted {
+        color: gray;
+    }
+
+    &__desc {
+        margin-bottom: 1rem;
+    }
+
+    &__like {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0.5rem;
+
+        &-section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__total-like {
+        margin: 0 0.3rem;
+        font-weight: 700;
+    }
+
+    &__link {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    &__reply {
+        margin: 2rem 0 0rem 4.5rem;
+
+    }
+}
+
+.line {
+    position: absolute;
+    width: 1px;
+    background-color: gray;
+    top: 60px;
+    left: 25px;
+    bottom: 0;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-auto-flow: row;
+}
+
+@media all and (min-width: 600px) {
+    :root {
+        font-size: 16px;
+    }
+
+    .comment {
+        margin: auto;
+        padding: 4rem 4rem;
+    }
+
+    .container {
+        display: grid;
+        // place-items: center;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .desktop-bg-top {
+        background: linear-gradient(80deg, red, yellow);
+        position: absolute;
+        top: 0;
+        height: 50vh;
+        width: 100vw;
+        filter: blur(30px);
+    }
+
+    .desktop-bg-bottom {
+        background: linear-gradient(80deg, blue, green);
+        position: absolute;
+        top: 50%;
+        height: 50vh;
+        width: 100vw;
+        filter: blur(30px);
+    }
+}

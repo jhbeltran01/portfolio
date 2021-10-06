@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/sign-up-page.css">
+        <title>Sign-Up</title>
+    </head>
+    <body>
+        <section class="sign-up-section grid-2-col-responsive-900">
+            <div class="wrapper-one">
+                <div class="logo">Fiber</div>
+                <header>
+                    <h1 class="wrapper-one__title">Create your Fiber account</h1>
+                </header>
+
+                <form class="form" action="#">
+                    <label class="form__label" for="name">Your Name</label>
+                    <input class="form__input" type="text" name="name" id="name" placeholder="John Doe" />
+
+                    <label class="form__label" for="email">E-mail</label>
+                    <input class="form__input" type="text" name="email" id="email" placeholder="john@example.com" />
+
+                    <label class="form__label" for="password">Password</label>
+                    <input class="form__input" type="password" name="password" id="password" placeholder="Atleast 8 character"/>
+
+                    <div class="form__terms">
+                        <input class="form__checkbox" type="checkbox" name="agree" id="agree">
+                        <label class="form__agree" for="agree">By creating an account  on Fiber, you agree to the <a href="#" class="form__link">Terms and Conditions</a></label>
+                    </div>
+
+                    <input class="btn btn-hero btn-sign-up" type="submit" value="Create Fiber Account">
+                </form>
+                
+                <p class="wrapper-one__sign-in">Already have an account? <span class="form__sign-in">Sign in</span></p>
+            </div>
+
+            <div class="hide sign-up-section__hero">
+                <div class="grid-span-2-col"></div>
+                <div>
+                    <img class="wrapper-one__img" src="Fiber Starter Files/Assets/Sign Up Image.png" alt="">
+
+                    <div class="wrapper-one__content">
+                        <header>
+                            <h2 class="wrapper-one__subtitle">Unparralled Templates</h2>
+                        </header>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui in sit vel nulla?</p>
+                        
+                        <div class="tab">
+                            <div class="dot tab__active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

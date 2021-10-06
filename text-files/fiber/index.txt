@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Fiber</title>
+    </head>
+    <body>
+        <div class="hero ">
+            <div class="set-max-width">
+                <nav class="nav">
+                    <div class="logo">Fiber</div>
+    
+                    <img class="hamburger-icon" src="Fiber Starter Files/Assets/Hamburger Menu.svg" alt="">
+    
+                    
+                    <ul class="nav__list nav__list--desktop">
+                        <li><a class="nav__link" href="#">Community</a></li>
+                        <li><a class="nav__link" href="#">Pricing</a></li>
+                        <li><a class="nav__link" href="#">Features</a></li>
+                    </ul>
+    
+                    <div class="nav__call-to-action nav__call-to-action--desktop">
+                        <button class="btn btn-nav btn-nav-inverse">Sign In</button>
+                        <button class="btn btn-nav-mobile btn-nav" id="btn-sign-up">Sign Up</button>
+                    </div>
+
+                  <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li><a class="nav__link" href="#">Community</a></li>
+                        <li><a class="nav__link" href="#">Pricing</a></li>
+                        <li><a class="nav__link" href="#">Features</a></li>
+                    </ul>
+    
+                    <div class="nav__call-to-action">
+                        <button class="btn btn-nav btn-nav-inverse">Sign In</button>
+                        <button class="btn btn-nav-mobile btn-nav" id="btn-sign-up">Sign Up</button>
+                    </div>
+                  </div>
+                        
+                </nav>
+    
+                <section class="grid-2-col-responsive-900">
+                    <img class="hero__img" src="Fiber Starter Files/Assets/hero-Illustration.png" alt="">
+    
+                    <div class="grid-align-col-1 grid-center-responsive">
+                        <div class="hero__content">
+                            <div class="hide-in-mobile">
+                                <img src="Fiber Starter Files/Assets/star.svg" alt="">
+                                <img src="Fiber Starter Files/Assets/star.svg" alt="">
+                                <img src="Fiber Starter Files/Assets/star.svg" alt="">
+                                <img src="Fiber Starter Files/Assets/star.svg" alt="">
+                                <img src="Fiber Starter Files/Assets/star.svg" alt="">
+    
+                                <span>Rated 4.8/5 (243 reviews)</span>
+                            </div>
+                            <header>
+                                <h1 class="hero__title">Create your portfolio in minutes.</h1>
+                            </header>
+    
+                            <p class="hero__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nam ea doloribus dolorum facilis omnis sed hic!</p>
+    
+                            <div class="hero__call-to-action">
+                                <button class="btn btn-hero">Start Free Trial</button>
+                                <a class="hero__link" href="#">View Examples</a>
+                            </div>
+    
+                            <div class="hero__benefits">
+                                <div class="hero__desc align-center">
+                                    <img src="Fiber Starter Files/Assets/Checkmark.svg" alt="">
+                                    <span class="hero__benefits">No credit card required</span>
+                                </div>
+    
+                                <div class="hero__desc align-center">
+                                    <img src="Fiber Starter Files/Assets/Checkmark.svg" alt="">
+                                    <span class="hero__benefits">10 Free Templates</span>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="wrapper">
+           <div class="set-max-width">
+                <header>
+                    <h4 class="wrapper__secondary-title">Why Fiber?</h4>
+                    <h2 class="wrapper__title">A good portfolio means good employability.</h2>
+                </header>
+
+                <div class="grid-3-col-responsive">
+                    <div class="characteristic">
+                        <img src="Fiber Starter Files/Assets/time.svg" alt="">
+                        <h4>Build in minutes</h4>
+                        <p class="characteristic__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, unde ullam fugit aliquam laudantium a vero voluptatem.</p>
+                    </div>
+                
+                    <div class="characteristic">
+                        <img src="Fiber Starter Files/Assets/code.svg" alt="">
+                        <h4>Add custom CSS</h4>
+                        <p class="characteristic__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, unde ullam fugit aliquam laudantium a vero voluptatem.</p>
+                    </div>
+            
+                    <div class="characteristic">
+                        <img src="Fiber Starter Files/Assets/allSizes.svg" alt="">
+                        <h4>Responsive</h4>
+                        <p class="characteristic__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, unde ullam fugit aliquam laudantium a vero voluptatem.</p>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        <section class="wrapper">
+           <div class="set-max-width">
+                <div class="card grid-2-col-responsive ">
+                    <div class="grid-center-responsive">
+                        <div>
+                            <header>
+                                <h2 class="card__title">Diversify your portfolio.</h2>
+                            </header>
+            
+                            <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur ratione corporis reprehenderit ab quibusdam ut voluptate dicta natus blanditiis?</p>
+            
+                            <button class="btn btn-accent">Start Free Trial</button>
+                        </div>
+                    </div>
+        
+                    <img class="card__img" src="Fiber Starter Files/Assets/Page Image.png" alt="">
+                </div>
+           </div>
+        </section>
+
+        <section class="wrapper">
+           <div class="grid-3-col-responsive-with-minmax overflow-scroll set-max-width">
+                <div class="card-testimonial">
+                    <div class="card-testimonial__author">
+                        <img class="card-testimonial__avatar" src="Fiber Starter Files/Assets/User Avatar.svg" alt="">
+
+                        <div class="card-testimonial__user">
+                            <div class="card-testimonial__name">Sarah Andrews</div>
+                            <div>$100k in revenue</div>
+                        </div>
+                    </div>
+
+                    <p class="card-testimonial__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus animi excepturi aliquam, adipisci officia dolor vero quidem aut sunt minima! Odio, nisi illum voluptates nihil quaerat maxime minima.</p>
+                    
+                    <button class="btn btn-primary">View Sarah's Portfolio</button>
+                </div>
+
+                <div class="card-testimonial">
+                    <div class="card-testimonial__author">
+                        <img class="card-testimonial__avatar" src="Fiber Starter Files/Assets/User Avatar 2.svg" alt="">
+
+                        <div class="card-testimonial__user">
+                            <div class="card-testimonial__name">Mathew Higgins</div>
+                            <div>$20k in revenue</div>
+                        </div>
+                    </div>
+
+                    <p class="card-testimonial__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus animi excepturi aliquam, adipisci officia dolor vero quidem aut sunt minima! Odio, nisi illum voluptates nihil quaerat maxime minima.</p>
+                    
+                    <button class="btn btn-primary">View Mathew's Portfolio</button>
+                </div>
+
+                <div class="card-testimonial">
+                    <div class="card-testimonial__author">
+                        <img class="card-testimonial__avatar" src="Fiber Starter Files/Assets/User Avatar 32.svg" alt="">
+
+                        <div class="card-testimonial__user">
+                            <div class="card-testimonial__name">Janice Dave</div>
+                            <div>$30k in revenue</div>
+                        </div>
+                    </div>
+
+                    <p class="card-testimonial__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus animi excepturi aliquam, adipisci officia dolor vero quidem aut sunt minima! Odio, nisi illum voluptates nihil quaerat maxime minima.</p>
+                    
+                    <button class="btn btn-primary">View Janice's Portfolio</button>
+                </div>
+           </div>
+        </section>
+
+        <footer class="footer">
+            <div class="set-max-width footer__content">
+                <div class="grid-span-to-all-col">
+                    <header>
+                        <h5 class="logo">Fiber</h5>
+                    <p class="footer__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore quos voluptates quae quibusdam doloremque quis eos?</p>
+                    </header>
+                    <p class="footer__desc">Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div>
+                    <h5 class="footer__category">Sitemap</h5>
+    
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="#">Homepage</a></li>
+                        <li><a class="footer__link" href="#">Pricing</a></li>
+                        <li><a class="footer__link" href="#">Testimonials</a></li>
+                        <li><a class="footer__link" href="#">Features</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h5 class="footer__category">Resources</h5>
+    
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="">Support</a></li>
+                        <li><a class="footer__link" href="">Contact</a></li>
+                        <li><a class="footer__link" href="">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h5 class="footer__category">Company</h5>
+    
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="">About</a></li>
+                        <li><a class="footer__link" href="">Customers</a></li>
+                        <li><a class="footer__link" href="">Blog</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h5 class="footer__category">Portfolios</h5>
+    
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="">Sarah Andrews</a></li>
+                        <li><a class="footer__link" href="">Mathew Higgins</a></li>
+                        <li><a class="footer__link" href="">Janice Dave</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const btnSignUp = document.querySelectorAll("#btn-sign-up").forEach(btn => {
+                btn.addEventListener("click", redirectToSignUpPage);
+            });
+
+            function redirectToSignUpPage() {
+                location.href = "sign_up_page.html";
+            }
+
+
+            const hamburgerBtn = document.querySelector(".hamburger-icon").addEventListener("click", showOrHideMenu);
+
+            function showOrHideMenu() {
+                const menu = document.querySelector(".nav__menu").classList.toggle("show");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,479 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+:root {
+    font-size: 19px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -2rem;
+    position: relative;
+
+    &__menu {
+        display: none;
+        position: absolute;
+        bottom: -500px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    &__list {
+        list-style-type: none;
+
+        &--desktop {
+            display: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        display: block;
+        margin-bottom: 1rem;
+        padding: 0.5em;
+        transition: 500ms ease-in-out;
+        
+        &:hover {
+            background-color: rgb(129, 50, 194);
+            color: white;
+            font-weight: 700;
+        }
+    }
+    
+    &__call-to-action--desktop {
+        display: none;
+
+    }
+}
+
+.footer {
+    background-color: rgba(221, 160, 221, 0.178) ;
+    padding: 2rem 2rem 4rem;
+
+    &__desc {
+        margin: 0.5rem 0;
+        color: rgb(138, 126, 126)
+    }
+
+    &__category {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: rgb(138, 126, 126);
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+.hero {
+    padding: 2rem;
+    margin-bottom: 4rem;
+    background-color: rgba(221, 160, 221, 0.342);
+        
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    &__content {
+        padding: 2rem 0 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__desc {
+        margin: 1rem 0;
+        color: rgb(138, 126, 126);
+    }
+
+    &__call-to-action {
+        text-align: center;
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: 1rem;
+        color: rgb(129, 50, 194);
+        font-weight: 700;
+    }
+
+    &__benefits {
+        margin-left: 0.5rem;
+    }
+}
+
+.wrapper {
+    margin: 0 2rem 4rem;
+    &__title {
+        font-size: 2rem;
+        margin: 1rem 0 3rem;
+    }
+
+    &__secondary-title {
+        color: rgb(67, 11, 112);
+        font-size: 1.3rem;
+    }
+}
+
+.card {
+    background-color: rgb(129, 50, 194);
+    padding: 3rem 2rem 0;
+    border-radius: 10px;
+
+    &__title {
+        font-size: 2rem;
+        color: white;
+    }
+
+    &__desc {
+        color: rgb(231, 222, 222);
+        margin-bottom: 1rem;
+    }
+
+    &__img {
+        min-height: 500px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    &-testimonial {
+        border: 1px solid rgb(202, 193, 193);
+        border-radius: 5px;
+        padding: 1rem 1.5rem;
+        margin: 2rem 0;
+        &__avatar {
+            margin-right: 0.5rem;
+        }
+
+        &__author {
+            display: flex;
+            align-items: center;
+        }
+
+        &__user {
+            font-size: 0.9rem;
+        }
+
+        &__name {
+            line-height: 1;
+            color: rgb(67, 11, 112);
+            font-weight: 700;
+        }
+
+        &__desc {
+            margin: 0.5rem 0 0;
+        }
+    }
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+    width: 100%;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &-nav-mobile {
+        background-color: rgb(129, 50, 194);
+        color: white;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &-hero {
+        background-color: rgb(129, 50, 194);
+        border-color: rgb(129, 50, 194);
+        color: white;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &-accent {
+        background-color: white;
+        border-color: white;
+        color: rgb(129, 50, 194);
+
+        &:hover {
+            color: white;
+        }
+    }
+
+
+    &-primary {
+        color: rgb(129, 50, 194);
+
+        &:hover {
+            background-color: rgb(129, 50, 194);
+            color: white;
+        }
+    }
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hide-in-mobile {
+    display: none;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.characteristic {
+    margin-bottom: 2.5rem;
+
+    &__desc {
+        margin: 0.5rem 0;
+    }
+}
+
+.hamburger-icon {
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+@media all and (min-width: 600px) {
+    .grid-2-col-responsive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+
+    .hide-in-mobile {
+        display: block;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .grid-3-col-responsive {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+    }
+
+    .grid-3-col-responsive-with-minmax {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(400px, auto));
+        grid-gap: 50px;
+    }
+
+    .grid-4-col-responsive {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+
+    .grid-align-col-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .nav {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__list {
+            display: flex;
+        }
+
+        &__link {
+            margin: 1rem;
+            padding: 0;
+            &:hover {
+                font-weight: unset;
+                color: black;
+                background-color: transparent; 
+            }
+        }
+
+        &__call-to-action {
+            display: block;
+        }
+
+        &__menu {
+            display: block;
+            position: unset;
+            padding: 0;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            display: none;
+        }
+    }
+
+    .hero {
+        &__link {
+            margin-bottom: 0;
+        }
+
+        &__call-to-action {
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .btn {
+
+        &-hero {
+            width: 300px;
+            margin-right: 2rem;
+        }
+
+        &-nav {
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin: 0;
+            width: max-content;
+            background-color: rgb(129, 50, 194);
+            border-color: rgb(129, 50, 194);
+            color: white;
+    
+            &:hover {
+                border-color: transparent;
+                color: black;
+            }
+        }
+
+        &-accent {
+            width: 300px;
+        }
+    }
+
+    
+    
+    .btn-nav-inverse {
+        @extend .btn-nav:hover;
+        background-color: transparent;
+
+        &:hover {
+            @extend .btn-nav;
+            color: white;
+        }
+    }
+
+    .overflow-scroll {
+        overflow: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .btn-nav {
+        padding: 1rem;
+        width: max-content;
+    }
+} 
+
+@media all and (min-width: 900px) {
+    .grid-2-col-responsive-900 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+
+    .footer__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+    }
+    
+    .grid-span-to-all-col {
+        grid-column: 1/ -1;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .grid-center-responsive {
+        display: grid;
+        align-items: center;
+
+    }
+
+    .footer__content {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .grid-span-to-all-col {
+        grid-column: 1 / 2;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .hero__benefits {
+        display: flex;
+    }
+
+    .hero__desc:first-child {
+        margin-right: 1rem;
+    }
+}
+
+@media all and (min-width: 1480px) {
+    .set-max-width{
+        max-width: 1600px;
+        margin: 0 auto 4rem;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+}

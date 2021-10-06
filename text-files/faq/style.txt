@@ -1,0 +1,106 @@
+@import "variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 13px;
+    background: linear-gradient($soft-violet , $soft-blue);
+    min-height: 100vh;
+    margin-top: 15rem;
+}
+
+.card {
+    background-color: white;
+    margin: 0 1.5rem;
+    border-radius: 30px;
+    padding: 1.5em;
+    box-shadow:  0 20px 30px rgba(128, 128, 128, 0.397);
+    max-width: 900px;
+    
+    &__img-wrapper {
+        margin: -8rem auto 2rem;
+        background: url(../images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position-y: 110px;
+        background-position-x: 30px;
+        min-height: 220px;
+        width: 300px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    &__wrapper {
+        border-bottom: 1px solid $light-grayish-blue;
+        margin: 1rem 0;
+    }
+
+    &__question {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $very-dark-desaturated-blue;
+        transition: 250ms ease-in-out;
+        &:hover  {
+            color: $soft-red;
+            cursor: pointer;
+        }
+    }
+
+    &__info {
+        display: none;
+        color: $dark-grayish-blue;
+        padding-bottom: 1em;
+    }
+}
+
+.show {
+    display: block;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.box-img {
+    display: none;
+}
+
+@media all and (min-width:900px) {
+    .card {
+        padding: 3rem 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        
+        &__img-wrapper {
+            margin-top: 0;
+            margin-left: -3rem;
+            background: transparent;
+            background-position-x: -400px;
+            overflow: hidden;
+            width: max-content;
+        }
+
+        &__img {
+            margin-left: -5rem;
+        }
+    }
+
+    .box-img {
+        position: absolute;
+        top: 190px;
+        left: -129px;
+        display: block;
+    }
+}

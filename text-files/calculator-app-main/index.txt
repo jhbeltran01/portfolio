@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>Frontend Mentor | Calculator app</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container theme-1-bg-primary">
+            <div class="calc">
+                <header class="calc__header flex-just-between-align-end">
+                    <h1 class="calc__title theme-1-clr-secondary theme-3">calc</h1>
+                    <div class="toogle grid-col-2">
+                        <div class="calc__theme-title theme-1-clr-secondary theme-3">THEME</div>
+                        <div>
+                            <span class="toogle__theme-num theme-1-clr-secondary theme-3">1 2 3</span>
+                            <div class="toogle__bar flex-just-between theme-1-bg-secondary">
+                                <button class="btn-toogle theme-1-key-toggle-bg-tertiary one"></button>
+                                <button class="btn-toogle theme-1-key-toggle-bg-tertiary two"></button>
+                                <button class="btn-toogle theme-1-key-toggle-bg-tertiary three"></button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <input class="screen theme-1-bg-tertiary theme-1-clr-secondary" type="text" name="text" id="screen" />
+
+                <div class="keypad theme-1-bg-secondary grid-col-4">
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">7</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">8</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">9</button>
+                    <button class="btn-key theme-1-key-bg-secondary theme-1-clr-secondary">DEL</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">4</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">5</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">6</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">+</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">1</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">2</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">3</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">-</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">.</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">0</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">/</button>
+                    <button class="btn-key theme-1-key-bg-primary theme-1-clr-primary">x</button>
+                    <button class="btn-key theme-1-key-bg-secondary grid-span-col-2 theme-1-clr-secondary">RESET</button>
+                    <button
+                        class="btn-key theme-1-key-toggle-bg-tertiary theme-1-key-box-shadow grid-span-col-2 theme-1-clr-secondary"
+                        id="btn-equal"
+                    >
+                        =
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+            <a href="#">John Harold M. Beltran</a>.
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+// ### Primary
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+// ### Neutral
+
+$transparent-white: hsla(0, 0%, 100%, 0.75);   // (paragraphs)
+$very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.8;
+}
+
+body {
+    font-size: 15px;
+}
+
+.bg-one {
+    background-color: $bright-orange;
+}
+
+.bg-two {
+    background-color: $dark-cyan;
+}
+
+.bg-three {
+    background-color: $very-dark-cyan;
+}
+
+.wrapper {
+    width: max-content;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 4rem auto;
+
+    &__title {
+        color: $very-light-gray;
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 2rem;
+    }
+
+    &__desc {
+        font-family: 'Lexend Deca', sans-serif;;
+    }
+}
+
+.article {
+    padding: 2.5em;
+    color: $transparent-white;
+    max-width: 300px;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+
+    &-one {
+        border: 2px solid $bright-orange;
+        color: $bright-orange;
+
+        &:hover {
+            background-color: $bright-orange;
+        }
+    }
+
+    &-two {
+        border:  2px solid $dark-cyan;
+        color: $dark-cyan;
+
+        &:hover {
+            background-color: $dark-cyan;
+        }
+    }
+
+    &-three {
+        border:  2px solid $very-dark-cyan;
+        color: $very-dark-cyan;
+
+        &:hover {
+            background-color: $very-dark-cyan;
+        }
+    }
+
+    &:hover {
+        border-color: $transparent-white;
+        color: $transparent-white;
+    }
+}
+
+
+@media all and (min-width: 900px) {
+    .container {
+        height: 98vh;
+        display: grid;
+        place-items: center;
+    }
+    
+    .wrapper {
+        display:grid;
+        grid-template-columns: repeat(3, 300px);
+    }
+
+    .btn {
+        margin-top: 6rem;
+    }
+}
