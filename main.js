@@ -33,24 +33,33 @@ $(document).ready(function() {
 
 
     /************** SHOW MODAL ***************************/
-    allCards.on("click", showModal);
+    allCards.on("click", checkIfInDesktop);
     const MODAL = $(".modal");
     const IFRAME = $(".iframe");
+    const BODY_TAG = $("body")[0];
 
-    function showModal(target) {
+    function checkIfInDesktop(target) {
+        const viewportWidth = BODY_TAG.clientWidth;
+        const isInDesktop = viewportWidth >= 1200;
         const card = target.currentTarget;
-        const url = card.id;
+        var url = card.id;
 
+        if(isInDesktop) {
+            showModal(url, card);
+        } else {
+            // open link to another tab
+            window.open(url)
+        }
+    }
+
+    function showModal(url, card) {
         MODAL.fadeIn();
         IFRAME.attr({"src" : url});
-
         setCodeLink(card);
     }
 
     var fileLocation = "";
-    
     function setCodeLink(card) {
-        
         const cardName = card.classList[2];
         fileLocation = `text-files/${cardName}/`;
     }
